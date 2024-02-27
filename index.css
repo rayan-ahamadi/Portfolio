@@ -462,6 +462,13 @@ article h3{
     height: 148px;
 }
 
+.descri-projet span img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+}
+
 /* Contact */
 
 .contact {
