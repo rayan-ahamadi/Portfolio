@@ -7,9 +7,6 @@
     width: 100%;
   }
 
-  header{
-    display: none;
-  }
   h1{
     font-size: 110px;
   }
@@ -97,5 +94,52 @@
     height: 50px;
     width: 50px;
   }
+
+  .navbar{
+    height: 180px;
+    gap:0;
+    justify-content:flex-end;
+  }
+
+  .logo-desktop{
+    margin-right: 23%;
+  }
+
+  nav .button-menu{
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+  align-self: center;
+  }
+
+  .menu{
+    width: 100%;
+    height: 100%;
+  }
+
+  header{
+    height: 100%;
+  }
+
+  .menu{
+    justify-content: flex-start;
+    gap:100px;
+  }
+
+  .menu .nav a button{
+    font-size: 50px;
+    gap: 50px;
+  }
+
+  .menu .nav{
+    gap:50px;
+    margin-top: 80px;
+  }
+
+  .rs img{
+    height: 70px;
+    width: 70px;
+  }
+
 
 }

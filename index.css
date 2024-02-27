@@ -102,6 +102,8 @@ nav .button-xmark {
     gap: 20px;
     width: 100%;
     padding-top: 20px;
+    justify-content: space-around;
+
 
 }
 
@@ -121,14 +123,6 @@ nav .button-xmark {
     box-shadow: 1px 3px 29px 13px #A914EF; 
 }
 
-
-.menu .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 48px;
-    justify-content: space-around;
-}
 
 
 .nav-desktop .nav {
