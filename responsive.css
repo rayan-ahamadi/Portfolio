@@ -104,19 +104,17 @@
 
   .navbar{
     height: 180px;
-    gap:0;
-    justify-content:flex-end;
+    gap:50%;
+    justify-content: space-around;
   }
 
-  .logo-desktop{
-    margin-right: 23%;
-  }
 
   nav .button-menu{
     width: 95px;
     height: 95px;
     margin-right: 10px;
-  align-self: center;
+    align-self: center;
+    justify-self: flex-end;
   }
 
   .menu{
