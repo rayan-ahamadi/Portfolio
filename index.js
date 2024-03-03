@@ -40,7 +40,9 @@ function chatelier() {
 
 
 // navbar et menu 
-
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
    
 document.addEventListener('DOMContentLoaded', function() {
   let button = document.querySelector('.button-menu');
@@ -57,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else{
       menu.style.right = '-200%';
       button.src = "image/bars-solid.svg";
+      sleep(1000);
       header.style["height"] = "0";
     
     }
@@ -65,13 +68,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function() {
-      menu.style.right = '200%';
+      menu.style.right = '-200%';
       button.src = "image/bars-solid.svg"; 
+      sleep(500);
+      header.style["height"] = "0";
 
       let targetElement = document.querySelector(links[i].getAttribute('href'));
-      targetElement.scrollIntoView({
-        behavior: 'smooth'
-      });
+      targetElement.scrollIntoView({behavior: 'smooth'});
 
 
     });
