@@ -1,3 +1,17 @@
+@font-face {
+	font-family: 'Pixelify Sans';
+	src: url('fonts/Pixelify_Sans/static/PixelifySans-Bold.ttf') format(‘ttf’),
+		url('fonts/Pixelify_Sans/static/PixelifySans-Medium.ttf') format(‘ttf’),
+        url('fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf') format(‘ttf’),
+        url('fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format(‘ttf’)
+}
+
+@font-face {
+	font-family: 'VT323';
+	src: url('fonts/VT323/VT323-Regular.ttf') format(‘ttf’)
+}
+
+
 body {
     overflow-x: hidden;
     display: flex;
@@ -161,8 +175,7 @@ header a img{
 
 footer{
     width:100% ;
-    border-color: #AC8BD1;
-    background-color: #AC8BD1;
+    background-color: burlywood;
     bottom: 100%;
     padding-bottom: 50px;
 }
@@ -201,10 +214,9 @@ article {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 800px;
+    height: 100vh;
     text-align: center;
     padding-top: 8% ;
-    gap: 50px;
 }
 
 
@@ -252,8 +264,8 @@ h1 .rayan {
 
 .salut {
     background-image: url(image/background-gif.gif);
-    background-size:contain;
-    height: 707px;
+    background-size:cover;
+    height: 100vh;
     padding-top: 252px;
     padding-left:50px;
     display: flex;
@@ -278,12 +290,16 @@ h2 {
     margin: 0px;
 }
 
+#presentation{
+    justify-content: center;
+}
 
 article p{
     font-family: "VT323";
     color: burlywood;
     width: 80%;
     font-size: 27px; 
+    /*font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);*/
 }
 
 article h3{
@@ -308,6 +324,7 @@ article h3{
     color: burlywood;
     margin-left: 10px;
     margin-top: 10px;
+    font-size: 1.5rem;
 }
 
 .compétences label img {
@@ -363,6 +380,8 @@ article h3{
     height: 231px;
     width: 610px;
     padding: 0px;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .cursus img{
@@ -396,6 +415,7 @@ article h3{
 /* Projets */
 
 .projets {
+    gap: 20px;
 }
 
 .slideshow-container{
@@ -472,7 +492,7 @@ article h3{
 /* Contact */
 
 .contact {
-    
+    justify-content: center;
     padding-bottom: 50px;
 }
 
