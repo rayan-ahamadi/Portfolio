@@ -93,7 +93,7 @@ nav .button-xmark {
 .menu .nav a button{
     width: 100%;
     padding: 8px;
-    font-size: 23px ;
+    font-size: clamp(16px,1.5vw,2vw);
     font-family: var(--font2);
     border-radius: 8px;
     border: 2px solid black;
@@ -132,7 +132,8 @@ nav .button-xmark {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    top: 410px;
+    position: relative;
+    bottom: 13%;
 }
 
 .menu .rs img:hover{
@@ -225,7 +226,7 @@ article {
 
 h1{
     font-family: var(--font1);
-    font-size: 100px;
+    font-size: clamp(80px,6.5vw,7vw);
     color: burlywood;
     font-weight: bolder;
     margin:0;
@@ -239,6 +240,7 @@ h1 .rayan {
 }
 
 .salut a {
+    margin-top: 3%;
     display: flex;
     align-self: flex-start;
     border: 3px solid;
@@ -248,7 +250,7 @@ h1 .rayan {
     padding: 30px 100px 30px 100px;
     font-family: var(--font1);
     text-decoration: none;
-    font-size: 26px;
+    font-size: clamp(40px,1.7vw,7vw);
     background: -webkit-linear-gradient(#f9876f, #D95886);
     border-radius: 8px;
     
@@ -256,7 +258,6 @@ h1 .rayan {
 
 .salut a:hover {
     color:  white;
-    font-size:20px;
     border: 3px solid;
     border-color: white;
     transition: all 0.5s ease; 
@@ -288,7 +289,7 @@ main{
 h2 {
     font-family: var(--font1);
     font-weight: bolder;
-    font-size:80px;
+    font-size:clamp(20px,5.3vw,5.5vw);
     color: burlywood;
     margin: 0px;
 }
@@ -301,15 +302,14 @@ article p{
     font-family: var(--font2);
     color: burlywood;
     width: 80%;
-    font-size: 27px; 
-    /*font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);*/
+    font-size:clamp(18px,1.9vw,2vw);
 }
 
 article h3{
     font-family: var(--font2);
     font-weight: bolder;
     margin: 0px;
-    font-size: 30px;
+    font-size: clamp(20px,2.3vw,3vw)
 }
 
 
@@ -327,7 +327,7 @@ article h3{
     color: burlywood;
     margin-left: 10px;
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: clamp(16px,1.5vw,2vw);
 }
 
 .compétences label img {
@@ -356,7 +356,7 @@ article h3{
     background: -webkit-linear-gradient(#f9876f, #D95886);
     padding:12px;
     font-family: var(--font2); 
-    font-size: larger;
+    font-size:  clamp(16px,1.5vw,1.8vw);
     border-radius: 8px;
 }
 
@@ -380,7 +380,6 @@ article h3{
 }
 
 #texte-cursus {
-    height: 231px;
     width: 610px;
     padding: 0px;
     margin: auto;
@@ -505,8 +504,7 @@ article h3{
 
 .contact > a {
     display: flex;
-    font-family: var(--font2)
-    text-decoration: none;
+    font-family: var(--font2);
     color: burlywood;
     font-size: 20px;
     padding-left: 5px;

@@ -9,35 +9,23 @@
     width: 100%;
   }
 
-  h1{
+  /*h1{
     font-size: 110px;
   }
   h2{
     font-size: 90px;
-  }
+  }*/
 
-  article p{
-    font-size:35px
-  }
-
-  article h3{
-    font-size: 38px;
-  }
 
   .salut{
     padding-left: 0px;
     background-size:cover ;
-    height:1175px;
+    height:100vh;
     padding-top:50%;
   }
 
-  .salut a{
-    font-size: 35px;
-  }
 
-  .salut h1, .salut a{
-    margin:0 auto;
-  }
+
 
 
 
@@ -63,17 +51,14 @@
   }
 
   #cursus{
-    height: fit-content;
+    height: 100vh;
   }
   #texte-cursus{
     width: 100%;
     height: 100%;
-    font-size: 35px;
   }
 
-  .buttons button{
-    font-size: 30px;
-  }
+  
 
   .buttons{
     border-right: none;
@@ -87,14 +72,7 @@
     height: 350px;
   }
 
-  article{
-    height: 1175px;
-    padding-top:50%
-  }
-
-  .contact a{
-    font-size: 35px;
-  }
+  
 
   .reseau-footer img{
     height: 50px;
@@ -131,7 +109,6 @@
   }
 
   .menu .nav a button{
-    font-size: 50px;
     gap: 50px;
   }
 
