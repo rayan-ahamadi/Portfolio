@@ -206,11 +206,11 @@ footer .reseau-footer{
 /*CONTENU DE LA PAGE*/
 
 main {
+    background :-webkit-linear-gradient(#3D2A56, #8A4CA0);
     display: flex;
     margin-top: -110px;
-    width: 100%;
     flex-direction: column;
-    
+    gap: 40vh;
 }
 
 article {
@@ -218,9 +218,7 @@ article {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
     text-align: center;
-    padding-top: 8% ;
 }
 
 
@@ -267,7 +265,7 @@ h1 .rayan {
 
 
 .salut {
-    background-image: url(image/background-gif.gif);
+    background-image: url(image/gif.webp);
     background-size:cover;
     height: 100vh;
     padding-top: 252px;
@@ -279,9 +277,7 @@ h1 .rayan {
     text-align: left;
 }
 
-main{
-    background :-webkit-linear-gradient(#3D2A56, #8A4CA0);
-}
+
 
 
 /* Présentation */
@@ -495,7 +491,7 @@ article h3{
 
 .contact {
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 35vh;
 }
 
 .contact img {
