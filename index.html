@@ -6,7 +6,8 @@
     <link rel="shortcut icon" type="image/png" href="image/Favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Rayan Ahamadi, développeur web.">
     <meta name="keywords"
         content="Rayan Ahamadi, développeur web, portfolio, La Plateforme, Marseille, informatique, programmation, HTML, CSS, JavaScript, Python, Java, Spring, Symfony, SQL, Système d'exploitation, Figma, Ruby">
@@ -20,225 +21,229 @@
 
 <body>
 
-    <header>
+    <div class="root">
+        <header>
 
-        <nav>
-
-            <div class="navbar">
-                <img src="image-logo/logo2.svg" alt="logo" class="logo-desktop">
-                <img src="image/bars-solid.svg" alt="menu" class="button-menu">
+            <nav>
+    
+                <div class="navbar">
+                    <img src="image-logo/logo2.svg" alt="logo" class="logo-desktop">
+                    <img src="image/bars-solid.svg" alt="menu" class="button-menu">
+                </div>
+    
+                <!-- s'affiche quand on clique sur le menu -->
+    
+                <div class="menu">
+                    <div class="nav" id="nav-js">
+                        <a href="#compétences"><button>Mes compétences</button></a>
+                        <a href="#cursus"><button>Mon cursus scolaire</button></a>
+                        <a href="#projets"><button>Mes projets réalisés</button></a>
+                        <a href="#contact"><button>Me contacter</button></a>
+                        <a href="https://rayan-ahamadi.students-laplateforme.io/CV.html"><button>Mon CV en
+                                ligne</button></a>
+                    </div>
+    
+                    <div class="rs">
+                        <a href="https://www.linkedin.com/in/rayan-ahamadi-98a30b26b/" target="_blank"><img
+                                src="image/linkedin.png" alt=""></a>
+                        <a href="https://github.com/rayan-ahamadi" target="_blank"><img src="image/github.png" alt=""></a>
+                        <a href="mailto:rayan.ahamadi@laplateforme.io" target="_blank"><img src="image/gmail.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <!-- -->
+    
+            </nav>
+    
+    
+        </header>
+    
+        <main>
+            <article class="salut" id="salut">
+                <h1>Salut je suis <div class="rayan">Rayan,</div>
+                    Un Développeur Web <span id="animated-text"><i></i></span></h1>
+                <a href="#presentation">Présentation</a>
+            </article>
+    
+            <article class="presentation" data-aos="fade-up" id="presentation">
+                <h2>Présentation</h2>
+                <p>Bonjour ! Je suis Rayan Ahamadi, étudiant en développement web (Actuellement autodidacte). Passionné par
+                    la programmation, j'ai acquis des compétences solides dans différents langages et je suis constamment à
+                    la recherche de nouvelles compétences techniques. Ce portfolio reflète mes réalisations et mes
+                    compétences techniques. Je suis ouvert à toutes opportunités professionnelles, car je suis très motivé à
+                    lancer ma carrière dans le développement. N'hésitez pas à me contacter pour discuter de vos projets.</p>
+            </article>
+    
+            <article class="projets" data-aos="fade-up" id="projets">
+                <h2>Projets</h2>
+                <div class="projet-nom" id="projet-nom">
+                    <h3>Projet My Discord : Python, Tkinter, Socket</h3>
+                </div>
+                <div class="slideshow-container">
+                    <div class="back" id="back">◄</div>
+                    <div class="image-projets" id="image-projets">
+                        <a href="https://github.com/tom-fhal/myDiscord" target="_blank"><img
+                                src="image/projets/myDiscord.png" alt="MyDiscord"></a>
+                    </div>
+                    <div class="next" id="next">►</div>
+                </div>
+                <div class="dots">
+    
+                </div>
+                <p class="descri-projet" id="descri-projet"><span id="text-projet">Ce projet a été réalisé en duo à l'école
+                        La Plateforme<br>My Discord est un projet de messagerie instantanée en réseau local.<br>Il permet de
+                        créer des salons de discussions, d'envoyer des messages et des fichiers.<br>Il est possible de créer
+                        un compte et de se connecter.</span><br>
+                    <span>Vous pouvez voir tout mes projets et leurs codes sources sur mon Github : <a
+                            href="https://github.com/rayan-ahamadi" target="_blank"><img src="image/github.png"
+                                alt="Github Rayan"></a></span>
+                </p>
+    
+    
+            </article>
+    
+            <article class="compétences" data-aos="fade-up" id="compétences">
+                <h2>Compétences</h2>
+    
+                <p>Durant mes différents cursus en informatique et mon apprentissage en autodidacte, j'ai développé
+                    plusieurs connaissances :</p>
+    
+                <div class="skills-container">
+    
+                    <div class="skill">
+                        <label for="html"><img src="image/competences/HTML.png" alt="HTML"> HTML</label><br>
+                        <progress id="html" max="100" value="90"> 90% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="css"><img src="image/competences/CSS.png" alt="CSS"> CSS</label><br>
+                        <progress id="css" max="100" value="75"> 75% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="js"><img src="image/competences/JS.png" alt="JavaScript"> JavaScript</label><br>
+                        <progress id="js" max="100" value="75"> 75% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="php"><img src="image/competences/php.png" alt="PHP"> PHP</label><br>
+                        <progress id="js" max="100" value="80"> 80% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="sql"><img src="image/competences/sql.png" alt="SQL"> SQL</label><br>
+                        <progress id="sql" max="100" value="85"> 85% </progress>
+                        <br>
+                    </div>
+    
+    
+                    <div class="skill">
+                        <label for="python"><img src="image/competences/python.png" alt="python"> Python</label><br>
+                        <progress id="python" max="100" value="80"> 80% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="java"><img src="image/competences/Java.png" alt="java"> Java</label><br>
+                        <progress id="java" max="100" value="60"> 60% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="spring"><img src="image/competences/spring.png" alt="spring boot"> Spring</label><br>
+                        <progress id="spring" max="100" value="65"> 65% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="symfony"><img src="image/competences/symfony.png" alt="symfony"> Symfony</label><br>
+                        <progress id="php" max="100" value="65"> 65% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="laravel"><img src="image/competences/laravel.png" alt="laravel"> Laravel</label><br>
+                        <progress id="php" max="100" value="70"> 70% </progress>
+                        <br>
+                    </div>
+    
+                    <div class="skill">
+                        <label for="os"><img src="image/competences/OS.png" alt="Système d'exploitation"> Système
+                            d'exploitations</label><br>
+                        <progress id="os" max="100" value="95"> 95% </progress>
+                        <br>
+                    </div>
+    
+                </div>
+    
+            </article>
+    
+            <article class="cursus" data-aos="fade-up" id="cursus">
+    
+                <h2>Cursus</h2>
+    
+                <div class="descri-cursus">
+                    <div class="buttons">
+                        <button class="button" id="plateforme">École La Plateforme, Marseille</button>
+                        <button class="button" id="bellepierre">Lycée Bellepierre, La Réunion</button>
+                        <button class="button" id="chatelier">Lycée Le Chatelier, Marseille</button>
+                    </div>
+                    <div class="texte-curs">
+                        <h3 id="title-cursus">Le Bachelor IT : La Plateforme. 2022 - 2023</h3>
+                        <p id="texte-cursus">Après mon retour à Marseille, j'ai décidé de refaire une formation en
+                            informatique. On m'a recommandé une
+                            formation gratuite en informatique : Le Bachelor IT à La Plateforme. <br>
+                            La première année se fait à 100% en présentiel. On apprend les bases de l'informatique
+                            avec une pédagogie en mode projet. Qui nous permet d'apprendre en allant chercher les
+                            informations
+                            sois-même. </p>
+    
+                    </div>
+                    <a href="https://www.laplateforme.io/" target="_blank" id="lien-ecole"><img
+                            src="image/cursus/laplateforme.jpg" alt="école la plateforme" id="image-cursus"></a>
+                </div>
+    
+                <br>
+    
+            </article>
+    
+            <article class="contact" data-aos="fade-up" id="contact">
+                <h2>Contactez-moi !!!</h2>
+                <p>Vous pouvez me contactez, je suis disponible pour toute demande d'information complémentaires ou bien
+                    pour une demande de collaboration !!!!</p>
+    
+                <a href="mailto:rayanahamadi@laplateforme.io"><img src="image/gmail.png"
+                        alt="rayan.ahamadi@laplateforme.io">
+                    <p>rayan.ahamadi@laplateforme.io</p>
+                </a><br>
+                <a href="mailto:rayanahamadi13@gmail.com"><img src="image/gmail.png" alt="rayanahamadi13@gmail.com">
+                    <p>rayanahamadi13@gmail.com</p>
+                </a>
+    
+    
+            </article>
+        </main>
+    
+    
+        <footer>
+            <div class="logo-secondaire">
+                <img src="image-logo/logo_secondaire.svg" alt="logo-secondaire">
             </div>
-
-            <!-- s'affiche quand on clique sur le menu -->
-
-            <div class="menu">
-                <div class="nav" id="nav-js">
-                    <a href="#compétences"><button>Mes compétences</button></a>
-                    <a href="#cursus"><button>Mon cursus scolaire</button></a>
-                    <a href="#projets"><button>Mes projets réalisés</button></a>
-                    <a href="#contact"><button>Me contacter</button></a>
-                    <a href="https://rayan-ahamadi.students-laplateforme.io/CV.html"><button>Mon CV en
-                            ligne</button></a>
-                </div>
-
-                <div class="rs">
-                    <a href="https://www.linkedin.com/in/rayan-ahamadi-98a30b26b/" target="_blank"><img
-                            src="image/linkedin.png" alt=""></a>
-                    <a href="https://github.com/rayan-ahamadi" target="_blank"><img src="image/github.png" alt=""></a>
-                    <a href="mailto:rayan.ahamadi@laplateforme.io" target="_blank"><img src="image/gmail.png"
-                            alt=""></a>
-                </div>
+            <div class="reseau-footer">
+                <a href="https://www.linkedin.com/in/rayan-ahamadi-98a30b26b/"><img src="image/linkedin.png"
+                        alt="linkedin"></a>
+                <a href="https://github.com/rayan-ahamadi"><img src="image/github.png" alt="github"></a>
+                <a href="mailto:rayan.ahamadi@laplateforme.io"><img src="image/gmail.png" alt="gmail"></a>
             </div>
-            <!-- -->
+        </footer>
+    </div>
+    
 
-        </nav>
-
-
-    </header>
-
-    <main>
-        <article class="salut" id="salut">
-            <h1>Salut je suis <div class="rayan">Rayan,</div>
-                Un Développeur Web <span id="animated-text"><i></i></span></h1>
-            <a href="#presentation">Présentation</a>
-        </article>
-
-        <article class="presentation animated-article" id="presentation">
-            <h2>Présentation</h2>
-            <p>Bonjour ! Je suis Rayan Ahamadi, étudiant en développement web (Actuellement autodidacte). Passionné par
-                la programmation, j'ai acquis des compétences solides dans différents langages et je suis constamment à
-                la recherche de nouvelles compétences techniques. Ce portfolio reflète mes réalisations et mes
-                compétences techniques. Je suis ouvert à toutes opportunités professionnelles, car je suis très motivé à
-                lancer ma carrière dans le développement. N'hésitez pas à me contacter pour discuter de vos projets.</p>
-        </article>
-
-        <article class="projets animated-article" id="projets">
-            <h2>Projets</h2>
-            <div class="projet-nom" id="projet-nom">
-                <h3>Projet My Discord : Python, Tkinter, Socket</h3>
-            </div>
-            <div class="slideshow-container">
-                <div class="back" id="back">◄</div>
-                <div class="image-projets" id="image-projets">
-                    <a href="https://github.com/tom-fhal/myDiscord" target="_blank"><img
-                            src="image/projets/myDiscord.png" alt="MyDiscord"></a>
-                </div>
-                <div class="next" id="next">►</div>
-            </div>
-            <div class="dots">
-
-            </div>
-            <p class="descri-projet" id="descri-projet"><span id="text-projet">Ce projet a été réalisé en duo à l'école
-                    La Plateforme<br>My Discord est un projet de messagerie instantanée en réseau local.<br>Il permet de
-                    créer des salons de discussions, d'envoyer des messages et des fichiers.<br>Il est possible de créer
-                    un compte et de se connecter.</span><br>
-                <span>Vous pouvez voir tout mes projets et leurs codes sources sur mon Github : <a
-                        href="https://github.com/rayan-ahamadi" target="_blank"><img src="image/github.png"
-                            alt="Github Rayan"></a></span>
-            </p>
-
-
-        </article>
-
-        <article class="compétences animated-article" id="compétences">
-            <h2>Compétences</h2>
-
-            <p>Durant mes différents cursus en informatique et mon apprentissage en autodidacte, j'ai développé
-                plusieurs connaissances :</p>
-
-            <div class="skills-container">
-
-                <div class="skill">
-                    <label for="html"><img src="image/competences/HTML.png" alt="HTML"> HTML</label><br>
-                    <progress id="html" max="100" value="90"> 90% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="css"><img src="image/competences/CSS.png" alt="CSS"> CSS</label><br>
-                    <progress id="css" max="100" value="75"> 75% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="js"><img src="image/competences/JS.png" alt="JavaScript"> JavaScript</label><br>
-                    <progress id="js" max="100" value="75"> 75% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="php"><img src="image/competences/php.png" alt="PHP"> PHP</label><br>
-                    <progress id="js" max="100" value="80"> 80% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="sql"><img src="image/competences/sql.png" alt="SQL"> SQL</label><br>
-                    <progress id="sql" max="100" value="85"> 85% </progress>
-                    <br>
-                </div>
-
-
-                <div class="skill">
-                    <label for="python"><img src="image/competences/python.png" alt="python"> Python</label><br>
-                    <progress id="python" max="100" value="80"> 80% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="java"><img src="image/competences/Java.png" alt="java"> Java</label><br>
-                    <progress id="java" max="100" value="60"> 60% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="spring"><img src="image/competences/spring.png" alt="spring boot"> Spring</label><br>
-                    <progress id="spring" max="100" value="65"> 65% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="symfony"><img src="image/competences/symfony.png" alt="symfony"> Symfony</label><br>
-                    <progress id="php" max="100" value="65"> 65% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="laravel"><img src="image/competences/laravel.png" alt="laravel"> Laravel</label><br>
-                    <progress id="php" max="100" value="70"> 70% </progress>
-                    <br>
-                </div>
-
-                <div class="skill">
-                    <label for="os"><img src="image/competences/OS.png" alt="Système d'exploitation"> Système
-                        d'exploitations</label><br>
-                    <progress id="os" max="100" value="95"> 95% </progress>
-                    <br>
-                </div>
-
-            </div>
-
-        </article>
-
-        <article class="cursus animated-article" id="cursus">
-
-            <h2>Cursus</h2>
-
-            <div class="descri-cursus">
-                <div class="buttons">
-                    <button class="button" id="plateforme">École La Plateforme, Marseille</button>
-                    <button class="button" id="bellepierre">Lycée Bellepierre, La Réunion</button>
-                    <button class="button" id="chatelier">Lycée Le Chatelier, Marseille</button>
-                </div>
-                <div class="texte-curs">
-                    <h3 id="title-cursus">Le Bachelor IT : La Plateforme. 2022 - 2023</h3>
-                    <p id="texte-cursus">Après mon retour à Marseille, j'ai décidé de refaire une formation en
-                        informatique. On m'a recommandé une
-                        formation gratuite en informatique : Le Bachelor IT à La Plateforme. <br>
-                        La première année se fait à 100% en présentiel. On apprend les bases de l'informatique
-                        avec une pédagogie en mode projet. Qui nous permet d'apprendre en allant chercher les
-                        informations
-                        sois-même. </p>
-
-                </div>
-                <a href="https://www.laplateforme.io/" target="_blank" id="lien-ecole"><img
-                        src="image/cursus/laplateforme.jpg" alt="école la plateforme" id="image-cursus"></a>
-            </div>
-
-            <br>
-
-        </article>
-
-        <article class="contact animated-article" id="contact">
-            <h2>Contactez-moi !!!</h2>
-            <p>Vous pouvez me contactez, je suis disponible pour toute demande d'information complémentaires ou bien
-                pour une demande de collaboration !!!!</p>
-
-            <a href="mailto:rayanahamadi@laplateforme.io"><img src="image/gmail.png"
-                    alt="rayan.ahamadi@laplateforme.io">
-                <p>rayan.ahamadi@laplateforme.io</p>
-            </a><br>
-            <a href="mailto:rayanahamadi13@gmail.com"><img src="image/gmail.png" alt="rayanahamadi13@gmail.com">
-                <p>rayanahamadi13@gmail.com</p>
-            </a>
-
-
-        </article>
-    </main>
-
-
-    <footer>
-        <div class="logo-secondaire">
-            <img src="image-logo/logo_secondaire.svg" alt="logo-secondaire">
-        </div>
-        <div class="reseau-footer">
-            <a href="https://www.linkedin.com/in/rayan-ahamadi-98a30b26b/"><img src="image/linkedin.png"
-                    alt="linkedin"></a>
-            <a href="https://github.com/rayan-ahamadi"><img src="image/github.png" alt="github"></a>
-            <a href="mailto:rayan.ahamadi@laplateforme.io"><img src="image/gmail.png" alt="gmail"></a>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 

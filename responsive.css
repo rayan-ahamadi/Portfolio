@@ -1,27 +1,21 @@
 @media screen and (max-width: 768px) {
-  html{
-    width: 100vh;
-  }
-  html{
-    zoom:100%;
-  }
-  article{
-    width: 100%;
-  }
 
-  /*h1{
-    font-size: 110px;
-  }
-  h2{
-    font-size: 90px;
-  }*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+  .root{
+    overflow-x: hidden;
+  }
 
   .salut{
-    padding-left: 0px;
+    padding: 0;
     background-size:cover ;
     height:100vh;
-    padding-top:50%;
+    justify-content: center;
+    gap: 50px;
   }
 
 
@@ -38,10 +32,6 @@
     width: 350px;
   }
 
-  .back, .next{
-    font-size: 35px;
-  }
-
   .compétences progress{
     margin:0
   }
@@ -50,9 +40,6 @@
     font-size: 35px;
   }
 
-  #cursus{
-    height: 100vh;
-  }
   #texte-cursus{
     width: 100%;
     height: 100%;
@@ -80,15 +67,12 @@
   }
 
   .navbar{
-    height: 180px;
     gap:50%;
     justify-content: space-around;
   }
 
 
   nav .button-menu{
-    width: 95px;
-    height: 95px;
     margin-right: 10px;
     align-self: center;
     justify-self: flex-end;
@@ -97,10 +81,6 @@
   .menu{
     width: 100%;
     height: 100%;
-  }
-
-  header{
-    height: 0;
   }
 
   .menu{
