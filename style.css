@@ -228,7 +228,7 @@ h1{
     color: burlywood;
     font-weight: bolder;
     margin:0;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #3D2A56;
 }
 
 @keyframes blink {
@@ -266,11 +266,10 @@ h1 .rayan {
     margin-top: 3%;
     display: flex;
     align-self: flex-start;
-    border: 3px solid;
-    border-color: black;
-    color: black;
+    border: 3px solid #3D2A56;;
+    color: #3D2A56;
     font-weight: bolder;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 100px ;
     font-family: var(--font1);
     text-decoration: none;
     font-size: clamp(40px,1.7vw,7vw);

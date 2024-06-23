@@ -24,7 +24,6 @@ function writeText(element, text, interval) {
 
   const intervalId = setInterval(() => {
       element.textContent += text.charAt(index);
-      console.log(text.charAt(index)); 
       index++;
       if (index === text.length) {
         clearInterval(intervalId);
