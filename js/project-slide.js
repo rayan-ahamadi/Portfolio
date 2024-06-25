@@ -7,7 +7,7 @@ const lienProjet = document.querySelector('#image-projets a');
 const titreProjet = document.querySelector('#projet-nom h3');
 const descriProjet = document.querySelector('#text-projet')
 
-const imageList = ['myDiscord.png','calculator.png','gestion_des_stocks.png','comicsshop_figma.png','ecran-magique.png','fansite.png','librairie.png','pfc.png']
+const imageList = ['myDiscord.gif','Calculatrice.gif','gestion-de-stock.gif','ComicsShop.gif','ecran-magique.gif','comicsBlog.gif','Librairie.gif','pfc.gif']
 
 for(let image in imageList){
   document.querySelector('.dots').appendChild(document.createElement('div')).classList.add('dot')

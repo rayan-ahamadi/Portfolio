@@ -693,11 +693,14 @@ progress::-moz-progress-bar {
     max-height: clamp(15px,25vh, 500px);
     max-width: clamp(40px, 50vw, 500px);
     box-shadow:5px 5px 15px 5px black;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
+
+
 .image-projets a img:hover{
-    transform: scale(2);
+    transform: scale(1.8);
+    animation: play-gif 1s steps(1, end) infinite;
 }
 
 
