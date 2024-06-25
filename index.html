@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="image/Favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="image-logo/new-logo.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -15,6 +15,10 @@
     <script src="index.js" defer></script>
     <script src="js/text-animation.js" defer></script>
     <script src="js/scroll-reveal.js" defer></script>
+    <script src="js/scroll-header.js" defer></script>
+    <script src="js/project-slide.js" defer></script>
+    <script src="js/header-navbar.js" defer></script>
+    <script src="js/cursus-buttons.js" defer></script>
     <title>Rayan Ahamadi : Développeur Web</title>
 
 </head>
@@ -27,7 +31,7 @@
             <nav>
     
                 <div class="navbar">
-                    <img src="image-logo/logo2.svg" alt="logo" class="logo-desktop">
+                    <img src="image-logo/new-logo.png" alt="logo" class="logo-desktop">
                     <img src="image/bars-solid.svg" alt="menu" class="button-menu">
                 </div>
     
@@ -59,15 +63,16 @@
         </header>
     
         <main>
+            
             <article class="salut" id="salut">
                 <h1>Salut je suis <div class="rayan">Rayan,</div>
                     Un Développeur Web <span id="animated-text"><i></i></span></h1>
                 <a href="#presentation">Présentation</a>
             </article>
-    
+
             <article class="presentation" data-aos="fade-up" id="presentation">
                 <h2>Présentation</h2>
-                <p>Bonjour ! Je suis Rayan Ahamadi, étudiant en développement web (Actuellement autodidacte). Passionné par
+                <p style="text-align: justify;" data-aos="fade-up">Bonjour ! Je suis Rayan Ahamadi, étudiant en développement web (Actuellement autodidacte). Passionné par
                     la programmation, j'ai acquis des compétences solides dans différents langages et je suis constamment à
                     la recherche de nouvelles compétences techniques. Ce portfolio reflète mes réalisations et mes
                     compétences techniques. Je suis ouvert à toutes opportunités professionnelles, car je suis très motivé à
@@ -108,76 +113,201 @@
                 <p>Durant mes différents cursus en informatique et mon apprentissage en autodidacte, j'ai développé
                     plusieurs connaissances :</p>
     
-                <div class="skills-container">
-    
-                    <div class="skill">
-                        <label for="html"><img src="image/competences/HTML.png" alt="HTML"> HTML</label><br>
-                        <progress id="html" max="100" value="90"> 90% </progress>
-                        <br>
+                <div class="skills-container" data-aos="fade-up">
+                    
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/HTML.png" alt="HTML"> 
+                        </div>
+                        <div class="card-body">   
+                            <p>HTML</p>
+                            <p class="percentage">90%</p>
+                            <progress id="html" max="100" value="90"> 90% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/Portfolio">Mon Portfolio</a></li>
+                                    <li><a href="https://rayan-ahamadi.github.io/admin-dashboard/">Admin Dashboard</a></li>
+                                    <li><a href="https://rayan-ahamadi.github.io/Sign-up-Form/">Formulaire d'inscription</a></li>
+                                </ul>
+                            </div> 
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="css"><img src="image/competences/CSS.png" alt="CSS"> CSS</label><br>
-                        <progress id="css" max="100" value="75"> 75% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/CSS.png" alt="CSS"> 
+                        </div>
+                        <div class="card-body">
+                            <p>CSS</p>
+                            <p class="percentage">75%</p>
+                            <progress id="css" max="100" value="75"> 75% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/Portfolio">Mon Portfolio</a></li>
+                                    <li><a href="https://rayan-ahamadi.github.io/admin-dashboard/">Admin Dashboard</a></li>
+                                    <li><a href="https://rayan-ahamadi.github.io/Sign-up-Form/">Formulaire d'inscription</a></li>
+                                </ul>
+                            </div>                           
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="js"><img src="image/competences/JS.png" alt="JavaScript"> JavaScript</label><br>
-                        <progress id="js" max="100" value="75"> 75% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/JS.png" alt="JavaScript"> 
+                        </div>
+                        <div class="card-body">
+                            <p>JavaScript</p>
+                            <p class="percentage">75%</p>
+                            <progress id="js" max="100" value="75"> 75% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/Portfolio">Mon Portfolio</a></li>
+                                    <li><a href="https://rayan-ahamadi.github.io/calculator/">Calculatrice</a></li>
+                                    <li><a href="https://rayan-ahamadi.github.io/rock-paper-scissors/">Pierre Feuille Ciseaux</a></li>
+                                </ul>
+                            </div>                          
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="php"><img src="image/competences/php.png" alt="PHP"> PHP</label><br>
-                        <progress id="js" max="100" value="80"> 80% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/php.png" alt="PHP"> 
+                        </div>
+                        <div class="card-body">                                     
+                            <p>PHP</p>
+                            <p class="percentage">80%</p>
+                            <progress id="js" max="100" value="80"> 80% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://rayan-ahamadi.students-laplateforme.io/Motus/">Motus</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/librairie">Librairie</a></li>
+                                    <li><a href="https://karrosserie.pro/">Karrosserie.pro</a></li>
+                                </ul>
+                            </div>        
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="sql"><img src="image/competences/sql.png" alt="SQL"> SQL</label><br>
-                        <progress id="sql" max="100" value="85"> 85% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/sql.png" alt="SQL"> 
+                        </div>
+                        <div class="card-body">       
+                            <p>SQL</p>
+                            <p class="percentage">85%</p>
+                            <progress id="sql" max="100" value="85"> 85% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/gestion_de_stock">Gestion de stock python</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/commercial">Gestion commercial</a></li>
+                                </ul>
+                            </div>  
+                        </div>
                     </div>
-    
-    
-                    <div class="skill">
-                        <label for="python"><img src="image/competences/python.png" alt="python"> Python</label><br>
-                        <progress id="python" max="100" value="80"> 80% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/python.png" alt="python"> 
+                        </div>
+                        <div class="card-body">
+                            <p>Python</p>
+                            <p class="percentage">80%</p>
+                            <progress id="python" max="100" value="80"> 80% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/pendu">Jeu du pendu PYgame</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/tic-tac-toe">Jeu du tic-tac-toe</a></li>
+                                    <li><a href="https://github.com/tom-fhal/myDiscord">myDiscord</a></li>
+                                </ul>
+                            </div>  
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="java"><img src="image/competences/Java.png" alt="java"> Java</label><br>
-                        <progress id="java" max="100" value="60"> 60% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/Java.png" alt="java"> 
+                        </div>
+                        <div class="card-body">       
+                            <p>Java</p>
+                            <p class="percentage">60%</p>
+                            <progress id="java" max="100" value="60"> 60% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/api_HR-association"> API HR Association</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/webapp_HR-Association">Web App HR Association</a></li>
+                                </ul>
+                            </div>  
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="spring"><img src="image/competences/spring.png" alt="spring boot"> Spring</label><br>
-                        <progress id="spring" max="100" value="65"> 65% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/spring.png" alt="spring boot"> 
+                        </div>
+                        <div class="card-body">
+                            <p>Spring</p>
+                            <p class="percentage">65%</p>
+                            <progress id="spring" max="100" value="65"> 65% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/api_HR-association"> API HR Association</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/webapp_HR-Association">Web App HR Association</a></li>
+                                </ul>
+                            </div>         
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="symfony"><img src="image/competences/symfony.png" alt="symfony"> Symfony</label><br>
-                        <progress id="php" max="100" value="65"> 65% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/symfony.png" alt="symfony"> 
+                        </div>
+                        <div class="card-body">    
+                            <p>Symfony</p>
+                            <p class="percentage">65%</p>
+                            <progress id="php" max="100" value="65"> 65% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/librairie">Librairie</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/basic_symfony">basic_symfony</a></li>
+                                </ul>
+                            </div>    
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="laravel"><img src="image/competences/laravel.png" alt="laravel"> Laravel</label><br>
-                        <progress id="php" max="100" value="70"> 70% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/laravel.png" alt="laravel"> 
+                        </div>
+                        <div class="card-body">                            
+                            <p>Laravel</p>
+                            <p class="percentage">70%</p>
+                            <progress id="php" max="100" value="70"> 70% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://app.karrosserie.pro/getstarted">Karrosserie.pro</a></li>
+                                </ul>
+                            </div>               
+                        </div>
                     </div>
-    
-                    <div class="skill">
-                        <label for="os"><img src="image/competences/OS.png" alt="Système d'exploitation"> Système
-                            d'exploitations</label><br>
-                        <progress id="os" max="100" value="95"> 95% </progress>
-                        <br>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/OS.png" alt="Système d'exploitation"> 
+                        </div>
+                        <div class="card-body">                         
+                            <p>OS</p>
+                            <p class="percentage">95%</p>
+                            <progress id="os" max="100" value="95"> 95% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/shell-exe">Exo Shell</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/FTP">Création serveur FTP</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/cisco">Projets Cisco</a></li>
+                                </ul>
+                            </div>  
+                        </div>
                     </div>
-    
+
                 </div>
     
             </article>
@@ -186,7 +316,7 @@
     
                 <h2>Cursus</h2>
     
-                <div class="descri-cursus">
+                <div class="descri-cursus" data-aos="fade-up">
                     <div class="buttons">
                         <button class="button" id="plateforme">École La Plateforme, Marseille</button>
                         <button class="button" id="bellepierre">Lycée Bellepierre, La Réunion</button>
@@ -194,7 +324,7 @@
                     </div>
                     <div class="texte-curs">
                         <h3 id="title-cursus">Le Bachelor IT : La Plateforme. 2022 - 2023</h3>
-                        <p id="texte-cursus">Après mon retour à Marseille, j'ai décidé de refaire une formation en
+                        <p id="texte-cursus" style="text-align: justify;">Après mon retour à Marseille, j'ai décidé de refaire une formation en
                             informatique. On m'a recommandé une
                             formation gratuite en informatique : Le Bachelor IT à La Plateforme. <br>
                             La première année se fait à 100% en présentiel. On apprend les bases de l'informatique
@@ -214,7 +344,7 @@
             <article class="contact" data-aos="fade-up" id="contact">
                 <h2>Contactez-moi !!!</h2>
                 <p>Vous pouvez me contactez, je suis disponible pour toute demande d'information complémentaires ou bien
-                    pour une demande de collaboration !!!!</p>
+                    pour une demande de collaboration !</p>
     
                 <a href="mailto:rayanahamadi@laplateforme.io"><img src="image/gmail.png"
                         alt="rayan.ahamadi@laplateforme.io">
@@ -238,6 +368,9 @@
                         alt="linkedin"></a>
                 <a href="https://github.com/rayan-ahamadi"><img src="image/github.png" alt="github"></a>
                 <a href="mailto:rayan.ahamadi@laplateforme.io"><img src="image/gmail.png" alt="gmail"></a>
+            </div>
+            <div class="copyright">
+                <p style="text-align: center;">© 2024 Rayan Ahamadi</p>
             </div>
         </footer>
     </div>

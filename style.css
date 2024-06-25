@@ -19,7 +19,7 @@
     --h1-stroke-color : #3D2A56;
     --orange-fade : -webkit-linear-gradient(#f9876f, #D95886);
     --h2-color : #DEB887;
-    --h3-color : #3D2A56;
+    --h3-color : #DEB887;
     --button-border-color : #3D2A56;
     --button-text-color : #3D2A56;
     --nav-color : #514D7E;
@@ -60,7 +60,7 @@ header {
 .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #514d7e2d;
+    background-color: #3a254c00;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,6 +68,11 @@ header {
     width: 100%;
     gap:82%;
     height: 120px;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #3a254c; 
 }
 
 
@@ -91,10 +96,10 @@ nav .button-xmark {
 .menu {
     display: flex;
     position: absolute;
-    width: 11.8%;
+    width: 13.8%;
     right: -200%;
     transition: right 0.5s ease 0s;
-    background-color: rgb(81, 77, 126);
+    background-color: #3a254c;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -108,14 +113,16 @@ nav .button-xmark {
     font-size: clamp(16px,1.5vw,2vw);
     font-family: var(--font2);
     border-radius: 8px;
-    border: 2px solid black;
+    border: 2px solid var(--button-border-color);
+    color: var(--button-text-color);
     background: -webkit-linear-gradient(#f9876f, #D95886);
     cursor: pointer;
+    font-weight: bold;
 }
 
 .menu .nav a button:hover {
-    box-shadow: 1px 3px 29px 13px wheat;
     transition: all 0.5s ease;
+    transform: scale(1.09);
 }
 
 .menu .nav a {
@@ -128,7 +135,7 @@ nav .button-xmark {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1px;
     width: 100%;
     padding-top: 20px;
     justify-content: space-around;
@@ -173,8 +180,9 @@ nav .button-xmark {
 
 
 .rs img{
-    height: 30px;
-    width: 30px;
+    height: clamp(15px, 8vw, 25px);
+    width: clamp(15px, 8vw, 25px);
+    
 }
 
 
@@ -193,10 +201,14 @@ header a img{
 footer{
     width:100% ;
     background-color: burlywood;
-    bottom: 100%;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.copyright{
+    margin-top: 10%;
+}
 
 footer .reseau-footer{
     display: flex;
@@ -212,7 +224,7 @@ footer .reseau-footer{
 }
 
 .reseau-footer img{
-    height: 42px;
+    height: clamp(15px, 8vw, 42px);
 }
 
 
@@ -222,8 +234,11 @@ main {
     background :-webkit-linear-gradient(#3D2A56, #8A4CA0);
     display: flex;
     flex-direction: column;
-    gap: 40vh;
     z-index: 0;
+}
+
+main > :nth-child(n+2){
+    padding: 25vh 0;
 }
 
 article {
@@ -284,7 +299,7 @@ h1 .rayan {
     border: 3px solid #3D2A56;;
     color: #3D2A56;
     font-weight: bolder;
-    padding: 30px 100px ;
+    padding: clamp(15px,3.5vw,30px)  clamp(50px,9vw,100px) ;
     font-family: var(--font1);
     text-decoration: none;
     font-size: clamp(20px,1.7vw,7vw);
@@ -343,45 +358,207 @@ article h3{
     font-family: var(--font2);
     font-weight: bolder;
     margin: 0px;
-    font-size: clamp(20px,2.3vw,3vw)
+    font-size: clamp(20px,2.3vw,3vw);
+    color: var(--h3-color);
+    
 }
 
 
 
 /* Compétences*/
 
-.compétences {
-    
 
+.skills-container > .card {
+   min-height: 30vh; 
+   background-color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 1px 3px #884B9F, 0 1px 2px #884B9F;
+   transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+   overflow: hidden;
 }
 
-.compétences label {
+.skill-projects{
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none;
+}
+
+.card-image{
+    transition: ease 1s
+}
+
+.card-image > img{
+    transition: ease 1s
+}
+
+.card-body{
+    transition: ease 1s
+}
+
+
+.skills-container > .card:hover {
+    box-shadow: 0 14px 28px #884B9F, 0 10px 10px #884B9F;
+    transition: ease 2s;
+    transform: scale(1.05);
+    .card-image{
+        flex-grow: 0;
+        transition: ease 1s
+    }
+    .card-body{
+        flex-grow: 1;
+        transition: ease 1s;
+    }
+    .card-image > img{
+        height: 0px;
+        transition: ease 1s
+    }
+    .skill-projects{
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        display: block;
+    }
+
+    .skill-projects p{
+        font-family: var(--font2);
+        color: #3D2A56;
+        font-size: clamp(16px,2vw,18px);
+        text-align: center;
+        width:100% ;
+        margin: 8px 0;
+    }
+
+    .skill-projects ul, li{
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-family: var(--font2);
+        color: #3D2A56;
+        font-size: clamp(14px,1.8vw,16px);
+        line-height: 4vh;
+    }
+
+    .skill-projects li > a{
+        color: #3D2A56;
+        font-weight: bolder;
+        font-size: clamp(14px,1.8vw,16px);
+        transition: all 0.5s ease;
+    }
+}
+
+.card-body p {
     font-family: var(--font2);
     font-weight: bolder;
-    color: burlywood;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: clamp(16px,1.5vw,2vw);
+    color: var(--h1-stroke-color);
+    font-size: clamp(16px,2vw,3vw);
+    text-align: left;
+    margin: 0;
 }
 
-.compétences label img {
-    height: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+.card-body > .percentage {
+    display: inline;
 }
 
-.compétences progress{
-    margin-left: 30px;
-    margin-bottom: 20px;
-    max-width: 100vw;
+.card-body{
+    padding: 20px;
 }
+
+.card-image > img {
+    height: clamp(25px, 10vh, 130px);
+    position: relative;
+    top: 25%;
+}
+
+.card-image{
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.card-image:has(> img[alt="HTML"]){
+    background-color: #f9876f;
+}
+
+.card-image:has(> img[alt="CSS"]){
+    background-color: #80c1f7
+}
+
+.card-image:has(> img[alt="JavaScript"]){
+    background-color: #eae2a7;
+}
+
+.card-image:has(> img[alt="PHP"]){
+    background-color: #6c85ad;
+}
+
+.card-image:has(> img[alt="SQL"]){
+    background-color: #64869f;
+}
+
+.card-image:has(> img[alt="python"]){
+    background-color: #f7d77e;
+}
+
+.card-image:has(> img[alt="java"]){
+    background-color: #e69952;
+}
+
+.card-image:has(> img[alt="spring boot"]){
+    background-color: #9cb58b;
+}
+
+.card-image:has(> img[alt="symfony"]){
+    background-color: rgb(108, 108, 108);
+}
+
+.card-image:has(> img[alt="laravel"]){
+    background-color: #f89a95;
+}
+
+.card-image:has(> img[alt="Système d'exploitation"]){
+    background-color: #cb8ce9;
+}
+
+
 
 .skills-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 18px;
+}
+
+
+
+progress {
+    height: 1.2vh;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Style pour les navigateurs WebKit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 10vw;
+}
+
+progress::-webkit-progress-value {
+    background-color: #3D2A56; /* Changez cette couleur pour la couleur de votre choix */
+    border-radius: 10px;
+}
+
+/* Style pour Firefox */
+progress::-moz-progress-bar {
+    background-color: #6B3F82; /* Changez cette couleur pour la couleur de votre choix */
+    border-radius: 10px;
+    width: 10vw;
 }
 
 /* Cursus */
@@ -392,6 +569,15 @@ article h3{
     font-family: var(--font2); 
     font-size:  clamp(16px,1.5vw,1.8vw);
     border-radius: 8px;
+    color: var(--button-text-color);
+    border: 2px solid var(--button-border-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    box-shadow: 1px 3px 29px 13px wheat;
+    transition: all 0.5s ease;
 }
 
 .buttons {
@@ -414,15 +600,13 @@ article h3{
 }
 
 #texte-cursus {
-    width: 610px;
     padding: 0px;
     margin: auto;
     margin-top: 10px;
 }
 
 .cursus img{
-    height: 305px;
-    width: 400px;
+    height: clamp(25px, 35vw, 305px);
     padding: 0px;
     border: #514D7E solid;
     margin-right: 5px;
@@ -508,9 +692,12 @@ article h3{
 .image-projets a img{
     max-height: clamp(15px,25vh, 500px);
     max-width: clamp(40px, 50vw, 500px);
-    border : 2px solid black;
     box-shadow:5px 5px 15px 5px black;
-    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.image-projets a img:hover{
+    transform: scale(2);
 }
 
 
@@ -520,8 +707,8 @@ article h3{
 
 .descri-projet span img{
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: clamp(25px, 5vh, 50px);
+    width: clamp(25px, 5vh, 50px);;
 
 }
 
@@ -533,7 +720,7 @@ article h3{
 }
 
 .contact img {
-    height: 50px;
+    height: clamp(25px, 3vw, 50px);
 }
 
 .contact > a {

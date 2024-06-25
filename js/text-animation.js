@@ -1,5 +1,4 @@
 let animatedText = document.querySelector('#animated-text');
-const wordList = ['Motivé !', 'Sérieux !', 'Curieux !', 'Autonome !', 'Créatif !','Déterminé !', 'Pérsevérant !', 'Passionné !', 'Adaptable !', 'Organisé !'];
 
 
 function eraseText(element,interval){
@@ -36,8 +35,9 @@ function writeText(element, text, interval) {
 }
 
 async function infiniteLoop() {
-  index = 0;
+  let index = 0;
   while (true) {
+      const wordList = ['Motivé !', 'Sérieux !', 'Curieux !', 'Autonome !', 'Créatif !','Déterminé !', 'Pérsevérant !', 'Passionné !', 'Adaptable !', 'Organisé !'];
       if (animatedText.textContent === '') {
         writeText(animatedText, wordList[index], 100);
         if(index < wordList.length - 1) {
