@@ -32,6 +32,10 @@
     width: 350px;
   }
 
+  .image-projets a img:active{
+    transform: scale(0.8);
+  }
+
   .compétences progress{
     margin:0
   }
@@ -48,7 +52,7 @@
   
 
 
-  .navbar{
+  header > nav > .navbar{
     gap:50%;
     justify-content: space-around;
   }
@@ -73,6 +77,16 @@
   .menu .nav a button{
     gap: 50px;
   }
+
+  header {
+    transition: height 0.5s ease; /* Définir la durée et le type de transition */
+  }
+
+
+  .menu .nav a button:hover {
+    transition: none;
+    transform: none;
+}
 
   .menu .nav{
     gap:4vh;

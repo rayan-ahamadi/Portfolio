@@ -7,13 +7,34 @@ const lienProjet = document.querySelector('#image-projets a');
 const titreProjet = document.querySelector('#projet-nom h3');
 const descriProjet = document.querySelector('#text-projet')
 
-const imageList = ['myDiscord.gif','Calculatrice.gif','gestion-de-stock.gif','ComicsShop.gif','ecran-magique.gif','comicsBlog.gif','Librairie.gif','pfc.gif']
+const imageList = ['myDiscord.png','Calculatrice.png','gestion-de-stock.png','ComicsShop.png','ecran-magique.png','comicsBlog.png','Librairie.png','pfc.png']
 
 for(let image in imageList){
   document.querySelector('.dots').appendChild(document.createElement('div')).classList.add('dot')
   if(image == 0){
     document.querySelector('.dot').classList.add('active')
   }
+}
+
+
+
+if (window.innerWidth < 768){
+  
+  imageProjet.addEventListener('touchstart', function(){
+    imageProjet.src = `image/projets/${imageList[index].replace('.png','.gif')}`
+  })
+  imageProjet.addEventListener('touchend', function(){
+    imageProjet.src = `image/projets/${imageList[index].replace('.gif','.png')}`
+  })
+
+}else {
+  imageProjet.addEventListener('mouseover', function(){
+    imageProjet.src = `image/projets/${imageList[index].replace('.png','.gif')}`
+  })
+  
+  imageProjet.addEventListener('mouseout', function(){
+    imageProjet.src = `image/projets/${imageList[index].replace('.gif','.png')}`
+  })
 }
 
 let dots = document.querySelectorAll('.dot')

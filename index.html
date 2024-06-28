@@ -7,12 +7,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="modals.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Rayan Ahamadi, développeur web.">
+    <meta name="theme-color" content="#894B9F">
     <meta name="keywords"
         content="Rayan Ahamadi, développeur web, portfolio, La Plateforme, Marseille, informatique, programmation, HTML, CSS, JavaScript, Python, Java, Spring, Symfony, SQL, Système d'exploitation, Figma, Ruby">
     <meta name="author" content="Rayan Ahamadi">
-    <script src="index.js" defer></script>
     <script src="js/text-animation.js" defer></script>
     <script src="js/scroll-reveal.js" defer></script>
     <script src="js/scroll-header.js" defer></script>
@@ -39,6 +40,7 @@
     
                 <div class="menu">
                     <div class="nav" id="nav-js">
+                        <a href="#experience"><button>Mes expériences</button></a>
                         <a href="#compétences"><button>Mes compétences</button></a>
                         <a href="#cursus"><button>Mon cursus scolaire</button></a>
                         <a href="#projets"><button>Mes projets réalisés</button></a>
@@ -78,7 +80,103 @@
                     compétences techniques. Je suis ouvert à toutes opportunités professionnelles, car je suis très motivé à
                     lancer ma carrière dans le développement. N'hésitez pas à me contacter pour discuter de vos projets.</p>
             </article>
-    
+
+            <article class="experience" data-aos="fade-up" id="experience">
+                <h2>Expériences</h2>
+                <p>Ces dernières années, j'ai eu la chance de pouvoir effectuer plusieurs contrats dans l'informatique</p>
+                <div class="experience-container">
+                    <div class="timeline">
+                        <div class="start"></div>
+                    </div>
+                    <div class="entries">
+                        <div class="entry technicien">
+                            <div class="entry-dot"></div>
+                            <div class="entry-losange"></div>
+                            <div class="entry-card">
+                                <div class="entry-card-body">
+                                    <div class="exp-date">
+                                        <p>2018-2021</p>
+                                    </div>
+                                    <div class="exp-description">
+                                        <p> Stagiaire Technicien informatique</p>
+                                    </div>
+                                    <div class="exp-logo">
+                                        <p>Entreprises de réparation mobiles</p>
+                                        <img src="image/experiences/technicien.png" alt="technicien">
+                                    </div>
+                                    <div class="learn-more">
+                                        <button type="button" data-toggle="modal" data-target="#modal-technicien">En savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry afpa">
+                            <div class="entry-dot"></div>
+                            <div class="entry-losange"></div>
+                            <div class="entry-card">
+                                <div class="entry-card-body">
+                                    <div class="exp-date">
+                                        <p>Février 2024</p>
+                                    </div>
+                                    <div class="exp-description">
+                                        <p> Stagiaire Développeur Web</p>
+                                    </div>
+                                    <div class="exp-logo">
+                                        <p>AFPA de Saint-Jérôme</p>
+                                        <img src="image/experiences/afpa.png" alt="technicien">
+                                    </div>
+                                    <div class="learn-more">
+                                        <button type="button" data-toggle="modal" data-target="#modal-afpa">En savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry korporate">
+                            <div class="entry-dot"></div>
+                            <div class="entry-losange"></div>
+                            <div class="entry-card">
+                                <div class="entry-card-body">
+                                    <div class="exp-date">
+                                        <p>Mars 2024 - Mai 2024</p>
+                                    </div>
+                                    <div class="exp-description">
+                                        <p>Stagiaire Développeur Web</p>
+                                    </div>
+                                    <div class="exp-logo">
+                                        <p>SAS Korporate</p>
+                                        <img src="image/experiences/korporate.png" alt="technicien">
+                                    </div>
+                                    <div class="learn-more">
+                                        <button type="button" data-toggle="modal" data-target="#modal-korporate">En savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry avec-nous">
+                            <div class="entry-dot"></div>
+                            <div class="entry-losange"></div>
+                            <div class="entry-card">
+                                <div class="entry-card-body">
+                                    <div class="exp-date">
+                                        <p>Juin 2024</p>
+                                    </div>
+                                    <div class="exp-description">
+                                        <p> Stagiaire Développeur Web</p>
+                                    </div>
+                                    <div class="exp-logo">
+                                        <p>Association Avec Nous</p>
+                                        <img src="image/experiences/avec-nous.png" alt="technicien">
+                                    </div>
+                                    <div class="learn-more">
+                                        <button type="button" data-toggle="modal" data-target="#modal-avecnous">En savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
             <article class="projets" data-aos="fade-up" id="projets">
                 <h2>Projets</h2>
                 <div class="projet-nom" id="projet-nom">
@@ -88,7 +186,7 @@
                     <div class="back" id="back">◄</div>
                     <div class="image-projets" id="image-projets">
                         <a href="https://github.com/tom-fhal/myDiscord" target="_blank"><img
-                                src="image/projets/myDiscord.gif" alt="MyDiscord"></a>
+                                src="image/projets/myDiscord.png" alt="MyDiscord"></a>
                     </div>
                     <div class="next" id="next">►</div>
                 </div>
@@ -165,6 +263,24 @@
                                     <li><a href="https://github.com/rayan-ahamadi/Portfolio">Mon Portfolio</a></li>
                                     <li><a href="https://rayan-ahamadi.github.io/calculator/">Calculatrice</a></li>
                                     <li><a href="https://rayan-ahamadi.github.io/rock-paper-scissors/">Pierre Feuille Ciseaux</a></li>
+                                </ul>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/competences/bootstrap.png" alt="Bootstrap"> 
+                        </div>
+                        <div class="card-body">
+                            <p>Bootstrap</p>
+                            <p class="percentage">70%</p>
+                            <progress id="bootstrap" max="100" value="70"> 70% </progress>
+                            <div class="skill-projects" data-aos="fade-up">
+                                <p>Exemple de projets</p>
+                                <ul>
+                                    <li><a href="https://github.com/rayan-ahamadi/Portfolio">Mon Portfolio</a></li>
+                                    <li><a href="https://karrosserie.pro/">Karrosserie.pro</a></li>
+                                    <li><a href="https://github.com/rayan-ahamadi/librairie">Librairie</a></li>
                                 </ul>
                             </div>                          
                         </div>
@@ -375,8 +491,175 @@
         </footer>
     </div>
     
+    <!-- Modal Experience -->
+    <div class="modal fade" id="modal-technicien" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Mes stages de technicien informatique</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-image">
+                <div class="company-image">
+                    <label for="réparfone">Réparfone</label>
+                    <img src="image/experiences/reparfone.png" class="bac" alt="réparfone" id="réparfone">
+                </div>
+                <div class="company-image">
+                    <label for="clickandphone">Click And Phone</label>
+                    <img src="image/experiences/clickandphone.png" class="bac" alt="click and phone" id="clickandphone">
+                </div>
+                <div class="company-image">
+                    <label for="espace-media">Espace Média Technology</label>
+                    <img src="image/experiences/espace-media.jpg" class="bac" alt="espace-media" id="espace-media">
+                </div>
+                <div class="company-image">
+                    <label for="tech-mobile">Tech Mobile</label>
+                    <img src="image/experiences/tech-mobile.jpg" class="bac" alt="tech-mobile" id="tech-mobile">
+                </div>
+              </div>
+              <div class="modal-description">
+                <h3>Description</h3>
+                <p>Pendant mes années en Bac Professionnelle Système Numérique, j'ai eu l'occasion de travailler dans plusieurs entreprises de réparation mobiles. J'ai pu acquérir des compétences techniques en réparation de smartphones et tablettes. J'ai également pu développer des compétences en relation clientèle et en gestion de stock.</p>
+              </div>
+              <div class="modal-stackused">
+                <h3>Technologies utilisées</h3>
+                <div class="stack-images">
+                    <img src="image/competences/OS.png" alt="">
+                    <img src="image/competences/excel.svg" alt="">
+                </div>  
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="modal-afpa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Mon stage à l'AFPA de Saint-Jérôme</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="company-image">
+                        <label for="afpa">AFPA</label>
+                        <img src="image/experiences/afpa.png" alt="afpa" id="afpa">
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <h3>Description</h3>
+                    <p>En Février 2024, j'ai eu la chance de pouvoir faire un stage avec l'AFPA de Saint-Jérôme. J'ai pu apprendre à utiliser PHP avec Symfony et Bootstrap</p>
+                </div>
+                <div class="modal-stackused">
+                    <h3>Technologies utilisées</h3>
+                    <div class="stack-images">
+                        <img src="image/competences/php.png" alt="php">
+                        <img src="image/competences/symfony.png" alt="symfony">
+                        <img src="image/competences/bootstrap.png" alt="bootstrap">
+                    </div>  
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-korporate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Mon stage avec Korporate</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="company-image">
+                        <label for="réparfone">Korporate</label>
+                        <img src="image/experiences/korporate.png" alt="korporate" id="korporate">
+                    </div>
+                  </div>
+                  <div class="modal-description">
+                    <h3>Description</h3>
+                    <p>Pendant 2 mois, j'ai eu la chance de faire un stage avec Korporate. Durant ce stage, j'ai découvert le développement et la gestion de projet web en entreprise. J'ai participé au développement de Karrosserie.pro, un outil de gestion de garage, qui permet de générer de générer des devis et des factures en quelques cliques, à partir d'un rapport d'expertise. J'ai aussi participé à la création de sites web pour les clients garagistes ayant un certain abonnement sur l'application Karrosserie.
+
+                    </p>
+                  </div>
+                  <div class="modal-stackused">
+                    <h3>Technologies utilisées</h3>
+                    <div class="stack-images">
+                        <img src="image/competences/HTML.png" alt="html">
+                        <img src="image/competences/CSS.png" alt="css">
+                        <img src="image/competences/JS.png" alt="javascript">
+                        <img src="image/competences/php.png" alt="php">
+                        <img src="image/competences/sql.png" alt="sql">
+                        <img src="image/competences/laravel.png" alt="laravel">
+                        <img src="image/competences/bootstrap.png" alt="bootstrap">
+                    </div>  
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-avecnous" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Mon stage avec l'association Avec Nous</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="company-image">
+                        <label for="réparfone">"Avec Nous La Fabrique du Numérique"</label>
+                        <img src="image/experiences/avec-nous.png" alt="Avec Nous" id="Avec Nous">
+                    </div>
+                  </div>
+                  <div class="modal-description">
+                    <h3>Description</h3>
+                    <p>Pendant 3 semaines, j'ai eu la chance de faire un stage avec l'association "Avec Nous". J'ai eu l'occasion de créer un système qui permet aux gens de scanner un qr code, qui les ramènent vers le site de l'association avec les infos d'ouverture et les activités.</p>
+                  </div>
+                  <div class="modal-stackused">
+                    <h3>Technologies utilisées</h3>
+                    <div class="stack-images">
+                        <img src="image/competences/wordpress.png" alt="Wordpress">
+                        <img src="image/competences/HTML.png" alt="HTML">
+                        <img src="image/competences/CSS.png" alt="CSS">
+                        <img src="image/competences/php.png" alt="PHP">
+                        <img src="image/competences/sql.png" alt="SQL">
+                    </div>  
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--Scripts--> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 
