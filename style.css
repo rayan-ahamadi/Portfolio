@@ -22,10 +22,19 @@
     --h3-color : #DEB887;
     --button-border-color : #3D2A56;
     --button-text-color : #3D2A56;
-    --nav-color : #514D7E;
+    --header-color : #3a254c;
     --button-border-color : #3D2A56;
     --image-shadow-color : #3D2A56;
     --body-background : -webkit-linear-gradient(#3D2A56, #8A4CA0);
+    --purple-one : #3D2A56;
+    --purple-two : #8A4CA0;
+    --orange-one : #f9876f;
+    --orange-two : #D95886;
+    --orange-three: #DEB887;
+    --image-hover-color : #A914EF;
+    --card-background : antiquewhite;
+    --contact-label-color : #3a254c;
+
 }
 
 
@@ -73,7 +82,7 @@ header > nav > .navbar {
 }
 
 .navbar.scrolled {
-    background-color: #3a254c; 
+    background-color: var(--header-color); 
 }
 
 
@@ -100,7 +109,7 @@ nav .button-xmark {
     width: 13.8%;
     right: -200%;
     transition: right 0.5s ease 0s;
-    background-color: #3a254c;
+    background-color: var(--header-color);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -116,7 +125,7 @@ nav .button-xmark {
     border-radius: 8px;
     border: 2px solid var(--button-border-color);
     color: var(--button-text-color);
-    background: -webkit-linear-gradient(#f9876f, #D95886);
+    background: var(--orange-fade);
     cursor: pointer;
     font-weight: bold;
 }
@@ -158,7 +167,7 @@ nav .button-xmark {
 
 .menu .rs img:hover{
     transition: all 0.5s ease; 
-    box-shadow: 1px 3px 29px 13px #A914EF; 
+    box-shadow: 1px 3px 29px 13px var(--image-hover-color); 
 }
 
 
@@ -201,7 +210,7 @@ header a img{
 
 footer{
     width:100% ;
-    background-color: burlywood;
+    background-color: var(--orange-three);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -232,7 +241,7 @@ footer .reseau-footer{
 /*CONTENU DE LA PAGE*/
 
 main {
-    background :-webkit-linear-gradient(#3D2A56, #8A4CA0);
+    background :var(--body-background);
     display: flex;
     flex-direction: column;
     z-index: 0;
@@ -254,12 +263,12 @@ article {
 main h1{
     font-family: var(--font1);
     font-size: clamp(50px,6vw,6.5vw);
-    color: burlywood;
+    color: var(--h1-color);
     font-weight: bolder;
     margin: 0;
     margin-top: 10%;
     max-width: 100%;
-    -webkit-text-stroke: 2px #3D2A56;
+    -webkit-text-stroke: 2px var(--h1-stroke-color);
     line-height: 1;
 }
 
@@ -282,14 +291,14 @@ main h1{
     animation: blink 1s infinite; 
     width: 5px;
     height: clamp(13px,6vh,6.5vh);
-    background-color: #7A4591;
+    background-color: var(--purple-two);
     margin-left: 5px;
     margin-left: 10px;
-    border: 2px solid #3D2A56;
+    border: 2px solid var(--purple-one);
 }
 
 h1 .rayan {
-    background: -webkit-linear-gradient(#f9876f, #D95886);
+    background: var(--orange-fade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -298,15 +307,16 @@ h1 .rayan {
     margin-top: 3%;
     display: flex;
     align-self: flex-start;
-    border: 3px solid #3D2A56;;
-    color: #3D2A56;
+    border: 3px solid var(--button-border-color);
+    color: var(--button-text-color);
     font-weight: bolder;
     padding: clamp(15px,3.5vw,30px)  clamp(50px,9vw,100px) ;
     font-family: var(--font1);
     text-decoration: none;
     font-size: clamp(20px,1.7vw,7vw);
-    background: -webkit-linear-gradient(#f9876f, #D95886);
+    background: var(--orange-fade);
     border-radius: 8px;
+    transition: all 0.5s ease;
     
 }
 
@@ -315,7 +325,7 @@ h1 .rayan {
     border: 3px solid;
     border-color: white;
     transition: all 0.5s ease; 
-    box-shadow: 1px 3px 29px 13px #A914EF; 
+    box-shadow: 1px 3px 29px 13px var(--purple-two); 
 }
 
 
@@ -341,7 +351,7 @@ main h2 {
     font-family: var(--font1);
     font-weight: bolder;
     font-size:clamp(20px,5.3vw,5.5vw);
-    color: burlywood;
+    color: var(--h2-color);
     margin: 0px;
 }
 
@@ -351,7 +361,7 @@ main h2 {
 
 article p{
     font-family: var(--font2);
-    color: burlywood;
+    color: var(--paragraph-color);
     width: 80%;
     font-size:clamp(18px,1.9vw,2vw);
 }
@@ -376,7 +386,7 @@ article h3{
 .experience-container > .timeline{
     width: 98vw;
     height: 10px;
-    background-color: burlywood;
+    background-color: var(--orange-three);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -385,7 +395,7 @@ article h3{
 .timeline > .start{
     width: 100%;
     height: 5px;
-    background-color: #3D2A56;
+    background-color: var(--purple-one);
     position: relative;
 }
 
@@ -404,7 +414,7 @@ article h3{
 }
 
 .entry-card{
-    background-color: antiquewhite;
+    background-color: var(--card-background);
     display: flex;
     flex-direction: column;
     transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -418,7 +428,7 @@ article h3{
 .entry:hover{
     .entry-card {
         transform: translateY(-10px);
-        box-shadow: 0px 15px 20px 0px #884B9F;
+        box-shadow: 0px 15px 20px 0px var(--purple-two);
     }
 
     .entry-losange{
@@ -426,7 +436,7 @@ article h3{
     }
     .entry-dot{
         transform: scale(1.5);
-        background-color: #D95886;
+        background-color: var(--orange-two);
     }
 
 }
@@ -437,7 +447,7 @@ article h3{
 
 .entry-card p {
     font-size: clamp(18px,0.9vw,2vw);
-    color: #3a254c;
+    color: var(--purple-one);
     width: 100%;
 }
 
@@ -447,7 +457,7 @@ article h3{
     height: 40px;
     width: 30px;
     position: relative;
-    background-color: antiquewhite;
+    background-color: var(--card-background);
     margin: 0 auto;
     top: 2.6vh;
     transform: rotate(45deg);
@@ -463,9 +473,9 @@ article h3{
     margin: auto;
     position: relative;
     bottom: 17px;
-    background-color: #ED7677;
+    background-color: var(--orange-one);
     border-radius: 50%;
-    border: 0.16rem solid antiquewhite;
+    border: 0.16rem solid var(--card-background);
     transition: 0.5s ease;
 }
 
@@ -491,7 +501,7 @@ article h3{
     margin: auto;
     width: fit-content;
     padding-bottom: 0.5vh;
-    border-bottom: 1px solid #3D2A56;
+    border-bottom: 1px solid var(--purple-one);
 }
 
 .entry-card-body > .learn-more > button{
@@ -499,7 +509,7 @@ article h3{
     font-family: var(--font2);
     border-radius: 8px;
     color: var(--button-text-color);
-    background: -webkit-linear-gradient(#f9876f, #D95886);
+    background: var(--orange-fade);
     font-weight: bold;
     padding: 8px;
 }
@@ -560,10 +570,10 @@ article h3{
 
 .skills-container > .card {
    min-height: 30vh; 
-   background-color: antiquewhite;
+   background-color: var(--card-background);
    display: flex;
    flex-direction: column;
-   box-shadow: 0 1px 3px #884B9F, 0 1px 2px #884B9F;
+   box-shadow: 0 1px 3px var(--purple-two), 0 1px 2px var(--purple-two);
    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
    overflow: hidden;
    border-radius: 0px;
@@ -593,7 +603,7 @@ article h3{
 
 
 .skills-container > .card:hover {
-    box-shadow: 0 14px 28px #884B9F, 0 10px 10px #884B9F;
+    box-shadow: 0 14px 28px var(--purple-two), 0 10px 10px var(--purple-two);
     transition: ease 2s;
     transform: scale(1.05);
     .card-image{
@@ -617,7 +627,7 @@ article h3{
 
     .skill-projects p{
         font-family: var(--font2);
-        color: #3D2A56;
+        color: var(--purple-one);
         font-size: clamp(16px,2vw,18px);
         text-align: center;
         width:100% ;
@@ -629,13 +639,13 @@ article h3{
         padding: 0;
         text-align: left;
         font-family: var(--font2);
-        color: #3D2A56;
+        color: var(--purple-one);
         font-size: clamp(14px,1.8vw,16px);
         line-height: 4vh;
     }
 
     .skill-projects li > a{
-        color: #3D2A56;
+        color: var(--purple-one);
         font-weight: bolder;
         font-size: clamp(14px,1.8vw,16px);
         transition: all 0.5s ease;
@@ -747,13 +757,13 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #3D2A56; /* Changez cette couleur pour la couleur de votre choix */
+    background-color: var(--purple-one); /* Changez cette couleur pour la couleur de votre choix */
     border-radius: 10px;
 }
 
 /* Style pour Firefox */
 progress::-moz-progress-bar {
-    background-color: #6B3F82; /* Changez cette couleur pour la couleur de votre choix */
+    background-color: var(--purple-two); /* Changez cette couleur pour la couleur de votre choix */
     border-radius: 10px;
     width: 10vw;
 }
@@ -761,7 +771,7 @@ progress::-moz-progress-bar {
 /* Cursus */
 
 .buttons button{
-    background: -webkit-linear-gradient(#f9876f, #D95886);
+    background: var(--orange-fade);
     padding:12px;
     font-family: var(--font2); 
     font-size:  clamp(16px,1.5vw,1.8vw);
@@ -806,17 +816,17 @@ progress::-moz-progress-bar {
 .cursus img{
     height: clamp(25px, 35vw, 305px);
     padding: 0px;
-    border: #514D7E solid;
+    border: var(--purple-one) solid;
     margin-right: 5px;
-    box-shadow: 1px 3px 29px 13px #514D7E;
+    box-shadow: 1px 3px 29px 13px var(--purple-one);
 }
 
 .cursus a:hover{
     color:  white;
     border: 1px solid;
-    border-color: #514D7E;
+    border-color: var(--purple-one);
     transition: all 0.5s ease; 
-    box-shadow: 1px 3px 29px 13px #514D7E; 
+    box-shadow: 1px 3px 29px 13px var(--purple-one); 
 }
 
 .descri-cursus {
@@ -847,7 +857,7 @@ progress::-moz-progress-bar {
     cursor: pointer;
     align-self: center;
     display: flex;
-    background-color: #8A4CA0;
+    background-color: var(--purple-two);
     color: white;
     padding: 18px;
     font-size: clamp(2px,2.3vw,3vw);
@@ -944,7 +954,7 @@ main .contact {
 
 .form-group > label{
     font-family: var(--font2);
-    color: #3a254c;
+    color: var(--contact-label-color) ;
     font-size: clamp(13px,1.3vw,15px);
     text-align: left;
     transition: top 0.5s ease;
@@ -960,8 +970,8 @@ main .contact {
     font-size: clamp(16px,1.5vw,2vw);
     padding: 8px;
     border-radius: 8px;
-    border: 2px solid burlywood;
-    background-color: antiquewhite;
+    border: 2px solid var(--orange-three);
+    background-color: var(--card-background);
     transition: all 0.5s ease;
 
 }
@@ -983,7 +993,7 @@ main .contact {
 }
 
 .form-group.focused label{
-    color: burlywood;
+    color: var(--orange-three);
     top: 0;
     left: 0;
     width: 100%;
@@ -1006,7 +1016,7 @@ main .contact {
 
 
 .form-group.filled label{
-    color: burlywood;
+    color: var(--orange-three);
     top: 0;
     left: 0;
     width: 100%;
@@ -1024,7 +1034,7 @@ main .contact {
     padding: 8px;
     border-radius: 8px;
     border: 2px solid var(--button-border-color);
-    background: -webkit-linear-gradient(#f9876f, #D95886);
+    background: var(--orange-fade);
     cursor: pointer;
     font-weight: bold;
     color: var(--button-text-color);
@@ -1101,7 +1111,7 @@ main h3{
     padding: 1vh;
     width: 100%;
     height : 10%;
-    border-bottom: 2px solid burlywood;
+    border-bottom: var(--orange-three);
 }
 
 .modal-image img{
@@ -1144,7 +1154,7 @@ main h3{
 }
 
 .modal-stackused{
-    border-top: 2px solid burlywood;
+    border-top: 2px solid var(--orange-three);
 }
 
 .modal-description > *{
@@ -1155,32 +1165,32 @@ main h3{
 .modal-content p, 
 .modal-content h3{
     font-family: var(--font2);
-    color: burlywood;
+    color: var(--orange-three);
 }
 
 .modal-content h5{
     font-family: var(--font1);
-    color: burlywood;
+    color: var(--orange-three);
 }
 
 .modal .modal-content{
-    background-color: #3D2A56;
+    background-color: var(--purple-one);
 }
 
 .modal .modal-header{
-    border-bottom: 2px solid burlywood;
+    border-bottom: 2px solid var(--orange-three);
 }
 
 .modal .modal-footer{
-    border-top: 2px solid burlywood;
+    border-top: 2px solid var(--orange-three);
 }
 
 .modal button.close {
-    color: burlywood;
+    color: var(--orange-three);
     font-size: 20px;
     font-weight: bold;
-    background-color: #3D2A56;
-    border: 2px solid burlywood;
+    background-color: var(--purple-one);
+    border: 2px solid var(--orange-three);
     border-radius: 8px;
     padding: 1px 10px;
     cursor: pointer;
@@ -1193,11 +1203,11 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #3a254c; /* color of the tracking area */
+    background: var(--header-color); /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: burlywood; 
+    background-color: var(--orange-three); 
     border-radius: 20px; 
-    border: 2px solid  #8A4CA0;
+    border: 2px solid  var(--purple-two);
   }
