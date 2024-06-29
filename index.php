@@ -20,6 +20,8 @@
     <script src="js/project-slide.js" defer></script>
     <script src="js/header-navbar.js" defer></script>
     <script src="js/cursus-buttons.js" defer></script>
+    <script src="js/input-animation.js" defer></script>
+    <script src="js/send-mail.js" defer></script>
     <title>Rayan Ahamadi : Développeur Web</title>
 
 </head>
@@ -458,17 +460,41 @@
             </article>
     
             <article class="contact" data-aos="fade-up" id="contact">
-                <h2>Contactez-moi !!!</h2>
-                <p>Vous pouvez me contactez, je suis disponible pour toute demande d'information complémentaires ou bien
+                <h2>Contactez-moi !</h2>
+                <p>Vous pouvez me contacter via ce formulaire, je suis disponible pour toute demande d'information complémentaires ou bien
                     pour une demande de collaboration !</p>
     
-                <a href="mailto:rayanahamadi@laplateforme.io"><img src="image/gmail.png"
-                        alt="rayan.ahamadi@laplateforme.io">
-                    <p>rayan.ahamadi@laplateforme.io</p>
-                </a><br>
-                <a href="mailto:rayanahamadi13@gmail.com"><img src="image/gmail.png" alt="rayanahamadi13@gmail.com">
-                    <p>rayanahamadi13@gmail.com</p>
-                </a>
+                <div class="form-container">
+                    <form method="POST" id="contact-form">
+                        <div class="form-group" id="nom">
+                            <label for="nom" data-help="(êtes-vous 11 de Stranger Things ?)">Nom*</label>
+                            <input type="text" id="nom" name="nom" pattern="^[^0-9]+$" >
+                        </div>
+                        <div class="form-group" id="prenom">
+                            <label for="prenom" data-help="(êtes-vous 11 de Stranger Things ?)">Prénom*</label>
+                            <input type="text" id="prenom" name="prenom" pattern="^[^0-9]+$" required>
+                        </div>
+                        <div class="form-group" id="email">
+                            <label for="email" data-help="(format : email@mail.com)">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group" id="phone">
+                            <label for="tel" data-help="(format : 0612345678)">Téléphone</label>
+                            <input type="text" id="tel" name="tel" pattern="^(?:(?:\+33|0)[1-9](?:[.\-\s]?\d{2}){4})$"></input>
+                        </div>
+                        <div class="form-group" id="objet">
+                            <label for="objet" data-help="(Quel est l'objet de votre message ?)">Objet*</label>
+                            <input type="text" id="objet" name="objet" pattern="^[a-zA-Z0-9À-ÖØ-öø-ÿ\s,.'-?!]+$" required></input>
+                        </div>
+                        <div class="form-group" id="message">
+                            <label for="message" data-help="(Exprimez vous !)">Message*</label>
+                            <textarea id="message" name="message" pattern="^[a-zA-Z0-9À-ÖØ-öø-ÿ\s.,'!?()$%&@#\n\r-]+$" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="submit">Envoyer</button>
+                        </div>                 
+                    </form>
+                </div>
     
     
             </article>
@@ -593,7 +619,7 @@
                   </div>
                   <div class="modal-description">
                     <h3>Description</h3>
-                    <p>Pendant 2 mois, j'ai eu la chance de faire un stage avec Korporate. Durant ce stage, j'ai découvert le développement et la gestion de projet web en entreprise. J'ai participé au développement de Karrosserie.pro, un outil de gestion de garage, qui permet de générer de générer des devis et des factures en quelques cliques, à partir d'un rapport d'expertise. J'ai aussi participé à la création de sites web pour les clients garagistes ayant un certain abonnement sur l'application Karrosserie.
+                    <p>Pendant 2 mois, j'ai eu la chance de faire un stage avec Korporate. Durant ce stage, j'ai découvert le développement et la gestion de projet web en entreprise. J'ai participé au développement de Karrosserie.pro, un outil de gestion de garage, qui permet de générer des devis et des factures en quelques cliques, à partir d'un rapport d'expertise. J'ai aussi participé à la création de sites web pour les clients garagistes ayant un certain abonnement sur l'application Karrosserie.
 
                     </p>
                   </div>

@@ -7,11 +7,7 @@
 
   button.addEventListener('click', function() {
     if (button.src.match("image/bars-solid.svg")) {
-      if (window.innerWidth < 768) {
       menu.style.right = '0%';
-      } else {
-        menu.style.right = '1%';
-      }
       button.src = "image/xmark-solid.svg";
       header.style["height"] = "100%";
     } else{

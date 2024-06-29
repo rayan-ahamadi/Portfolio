@@ -770,11 +770,12 @@ progress::-moz-progress-bar {
     border: 2px solid var(--button-border-color);
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .buttons button:hover {
-    box-shadow: 1px 3px 29px 13px wheat;
     transition: all 0.5s ease;
+    transform: scale(1.09);
 }
 
 .buttons {
@@ -913,25 +914,158 @@ progress::-moz-progress-bar {
 
 /* Contact */
 
-.contact {
+main .contact {
     justify-content: center;
-    padding-bottom: 35vh;
+    padding-bottom: 40vh;
 }
 
 .contact img {
     height: clamp(25px, 3vw, 50px);
 }
 
-.contact > a {
-    display: flex;
-    font-family: var(--font2);
-    color: burlywood;
-    font-size: 20px;
-    padding-left: 5px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.form-container > form{
+    display : grid;
+    gap: 10px;
+    grid-template-areas: 
+    "nom prenom"
+    "email phone"
+    "objet objet"
+    "message message"
+    "message message"
+    "submit .";
+    ;
 }
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group > label{
+    font-family: var(--font2);
+    color: #3a254c;
+    font-size: clamp(13px,1.3vw,15px);
+    text-align: left;
+    transition: top 0.5s ease;
+    position: relative;
+    top: 55%;
+    left: 3%;
+    width: 0;
+}
+
+.form-group input, 
+.form-group textarea{
+    font-family: var(--font2);
+    font-size: clamp(16px,1.5vw,2vw);
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid burlywood;
+    background-color: antiquewhite;
+    transition: all 0.5s ease;
+
+}
+
+.form-group input:focus, 
+.form-group textarea:focus{
+    background-color: #f3f3f3;
+    transition: all 0.5s ease;
+}
+
+.form-group.filled input:valid, .form-group.filled textarea:valid{
+    transition: all 0.5s ease;
+    background-color: #a5cf92;
+}
+
+.form-group.filled input:invalid, .form-group.filled textarea:invalid{
+    transition: all 0.5s ease;
+    background-color: #cf9292;
+}
+
+.form-group.focused label{
+    color: burlywood;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: clamp(14px,1.4vw,18px);
+}
+
+.form-group.focused label::after{
+    content: attr(data-help);
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    width: 100%;
+}
+
+
+.form-group.seconds label::after{
+    content: attr(data-help);
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+}
+
+
+.form-group.filled label{
+    color: burlywood;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.form-group textarea{
+    resize: none;
+    height: 18vh;
+}
+
+
+.form-group button{
+    font-family: var(--font2);
+    font-size: clamp(16px,1.5vw,2vw);
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--button-border-color);
+    background: -webkit-linear-gradient(#f9876f, #D95886);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--button-text-color);
+    transition: all 0.5s ease;
+}
+
+.form-group button:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.09);
+}
+
+
+#nom{
+    grid-area: nom;
+}
+
+#prenom{
+    grid-area: prenom;
+}
+
+#email{
+    grid-area: email;
+}
+
+#phone{
+    grid-area: phone;
+}
+
+#objet{
+    grid-area: objet;
+}
+
+#message{
+    grid-area: message;
+}
+
+#submit{
+    grid-area: submit;
+}
+
+
 
 
 /* Menu mobile */
