@@ -946,6 +946,10 @@ main .contact {
     ;
 }
 
+.form-container{
+    width: 60%;
+}
+
 .form-group{
     display: flex;
     flex-direction: column;

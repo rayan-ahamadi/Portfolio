@@ -68,7 +68,7 @@
     
         <main>
             
-            <article class="salut" id="salut">
+            <article class="salut" id="salut" data-aos="fade-right">
                 <h1>Salut je suis <div class="rayan">Rayan,</div>
                     Un Développeur Web <span id="animated-text"><i></i></span></h1>
                 <a href="#presentation">Présentation</a>
@@ -595,7 +595,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -613,7 +613,7 @@
             <div class="modal-body">
                 <div class="modal-image">
                     <div class="company-image">
-                        <label for="réparfone">Korporate</label>
+                        <label for="korporate">Korporate</label>
                         <img src="image/experiences/korporate.png" alt="korporate" id="korporate">
                     </div>
                   </div>
@@ -637,7 +637,7 @@
                   </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
@@ -655,8 +655,8 @@
             <div class="modal-body">
                 <div class="modal-image">
                     <div class="company-image">
-                        <label for="réparfone">"Avec Nous La Fabrique du Numérique"</label>
-                        <img src="image/experiences/avec-nous.png" alt="Avec Nous" id="Avec Nous">
+                        <label for="Avec-Nous">"Avec Nous La Fabrique du Numérique"</label>
+                        <img src="image/experiences/avec-nous.png" alt="Avec Nous" id="Avec-Nous">
                     </div>
                   </div>
                   <div class="modal-description">
@@ -675,7 +675,7 @@
                   </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>

@@ -48,7 +48,18 @@
     padding-bottom: 5px;
   }
 
-
+  .form-container > form{
+    grid-template-areas: 
+    "nom"
+    "prenom"
+    "email"
+    "phone"
+    "objet"
+    "message"
+    "message"
+    "submit";
+    ;
+}
   
 
 
