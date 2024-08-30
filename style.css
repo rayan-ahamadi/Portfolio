@@ -375,6 +375,98 @@ article h3{
     
 }
 
+.profile-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+    background-color: var(--card-background);
+    border-radius: 15px;
+    width: 70%;
+    margin-top: 13px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
+}
+
+.profile-card p{
+    color: var(--purple-one);
+    font-size: clamp(18px,1.5vw,2vw);
+    text-align: left;
+    width: 100%;
+    padding: 18px;
+}
+
+.profile-card img{
+    height: 250px;
+    border-radius: 18px;
+    margin: 8px;
+    border: 2px solid var(--card-background);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.profile-image{
+    position: relative;
+    right: 95px;
+}
+
+.profile-description{
+    position: relative;
+    right: 85px;
+}
+
+.profile-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-socials > a{
+    color: var(--purple-one);
+}
+
+.profile-socials > a:hover{
+    filter: brightness(150%);
+}
+
+@media screen and (max-width: 1030px) {
+    .profile-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 28px;
+    }
+
+    .profile-card img{
+        height: 200px;
+        margin: 8px;
+    }
+
+    .profile-card p{
+        text-align: center;
+    }
+
+    .profile-card{
+        width: 90%;
+    }
+
+    .profile-card .profile-image{
+        position: relative;
+        right: 0px;
+        bottom: 34px;
+    }
+
+    .profile-card .profile-description{
+        position: relative;
+        right: 0px;
+        bottom: 32px;
+    }
+
+    .profile-card .profile-socials{
+        justify-content: center;
+    }
+}
+
 /*Experience*/
 
 .experience-container{

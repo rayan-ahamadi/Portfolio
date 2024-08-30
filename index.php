@@ -22,6 +22,7 @@
     <script src="js/cursus-buttons.js" defer></script>
     <script src="js/input-animation.js" defer></script>
     <script src="js/send-mail.js" defer></script>
+    <script src="https://kit.fontawesome.com/c6719cd8a9.js" crossorigin="anonymous"></script>
     <title>Rayan Ahamadi : Développeur Web</title>
 
 </head>
@@ -68,19 +69,43 @@
     
         <main>
             
-            <article class="salut" id="salut" data-aos="fade-right">
-                <h1>Salut je suis <div class="rayan">Rayan,</div>
+            <article class="salut" id="salut" >
+                <h1 data-aos="fade-right" >Salut je suis <div class="rayan">Rayan,</div>
                     Un Développeur Web <span id="animated-text"><i></i></span></h1>
-                <a href="#presentation">Présentation</a>
+                <a href="#presentation" data-aos="fade-right">Présentation</a>
             </article>
 
             <article class="presentation" data-aos="fade-up" id="presentation">
                 <h2>Présentation</h2>
-                <p style="text-align: justify;" data-aos="fade-up">Bonjour ! Je suis Rayan Ahamadi, étudiant en développement web (Actuellement autodidacte). Passionné par
-                    la programmation, j'ai acquis des compétences solides dans différents langages et je suis constamment à
-                    la recherche de nouvelles compétences techniques. Ce portfolio reflète mes réalisations et mes
-                    compétences techniques. Je suis ouvert à toutes opportunités professionnelles, car je suis très motivé à
-                    lancer ma carrière dans le développement. N'hésitez pas à me contacter pour discuter de vos projets.</p>
+
+                <div class="profile-card" data-aos="fade-up">
+                    <div class="profile-image">
+                        <img src="image/profil.png" alt="Rayan Ahamadi">
+                    </div>
+                    <div class="profile-description">
+                        <p>
+                            Bonjour ! Je suis Rayan Ahamadi, étudiant en développement web. Passionné par
+                            la programmation, j'ai acquis des compétences solides dans différents langages et je suis constamment à
+                            la recherche de nouvelles compétences techniques. Ce portfolio reflète mes réalisations et mes
+                            compétences techniques. Je suis ouvert à toutes opportunités professionnelles, car je suis très motivé à
+                            lancer ma carrière professionnelle dans le développement. N'hésitez pas à me contacter pour discuter de vos projets !
+                        </p>
+                        <div class="profile-socials">
+                            <a href="https://github.com/rayan-ahamadi">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rayan-ahamadi/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="#contact">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
             </article>
 
             <article class="experience" data-aos="fade-up" id="experience">
@@ -682,6 +707,7 @@
     </div>
 
     <!--Scripts--> 
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
