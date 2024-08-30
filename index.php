@@ -53,11 +53,15 @@
                     </div>
     
                     <div class="rs">
-                        <a href="https://www.linkedin.com/in/rayan-ahamadi-98a30b26b/" target="_blank"><img
-                                src="image/linkedin.png" alt=""></a>
-                        <a href="https://github.com/rayan-ahamadi" target="_blank"><img src="image/github.png" alt=""></a>
-                        <a href="mailto:rayan.ahamadi@laplateforme.io" target="_blank"><img src="image/gmail.png"
-                                alt=""></a>
+                        <a class="socials" href="https://www.linkedin.com/in/rayan-ahamadi/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="socials"  href="https://github.com/rayan-ahamadi">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="socials" href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
                 <!-- -->
@@ -91,13 +95,13 @@
                             lancer ma carrière professionnelle dans le développement. N'hésitez pas à me contacter pour discuter de vos projets !
                         </p>
                         <div class="profile-socials">
-                            <a href="https://github.com/rayan-ahamadi">
+                            <a class="socials"  href="https://github.com/rayan-ahamadi">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/rayan-ahamadi/">
+                            <a class="socials" href="https://www.linkedin.com/in/rayan-ahamadi/">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
-                            <a href="#contact">
+                            <a class="socials" href="#contact">
                                 <i class="fa-solid fa-envelope"></i>
                             </a>
                         </div>
@@ -224,9 +228,11 @@
                         La Plateforme<br>My Discord est un projet de messagerie instantanée en réseau local.<br>Il permet de
                         créer des salons de discussions, d'envoyer des messages et des fichiers.<br>Il est possible de créer
                         un compte et de se connecter.</span><br>
-                    <span>Vous pouvez voir tout mes projets et leurs codes sources sur mon Github : <a
-                            href="https://github.com/rayan-ahamadi" target="_blank"><img src="image/github.png"
-                                alt="Github Rayan"></a></span>
+                    <span>Vous pouvez voir tout mes projets et leurs codes sources sur mon Github : 
+                        <a class="socials" href="https://github.com/rayan-ahamadi">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </span>
                 </p>
     
     
@@ -466,7 +472,7 @@
                         <button class="button" id="chatelier">Lycée Le Chatelier, Marseille</button>
                     </div>
                     <div class="texte-curs">
-                        <h3 id="title-cursus">Le Bachelor IT : La Plateforme. 2022 - 2023</h3>
+                        <h3 id="title-cursus">Le Bachelor IT : La Plateforme. 2022 - MAINTENANT</h3>
                         <p id="texte-cursus" style="text-align: justify;">Après mon retour à Marseille, j'ai décidé de refaire une formation en
                             informatique. On m'a recommandé une
                             formation gratuite en informatique : Le Bachelor IT à La Plateforme. <br>
@@ -531,10 +537,16 @@
                 <img src="image-logo/logo_secondaire.svg" alt="logo-secondaire">
             </div>
             <div class="reseau-footer">
-                <a href="https://www.linkedin.com/in/rayan-ahamadi-98a30b26b/"><img src="image/linkedin.png"
-                        alt="linkedin"></a>
-                <a href="https://github.com/rayan-ahamadi"><img src="image/github.png" alt="github"></a>
-                <a href="mailto:rayan.ahamadi@laplateforme.io"><img src="image/gmail.png" alt="gmail"></a>
+                <a class="socials" href="https://www.linkedin.com/in/rayan-ahamadi/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="socials"  href="https://github.com/rayan-ahamadi">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="socials" href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
             </div>
             <div class="copyright">
                 <p style="text-align: center;">© 2024 Rayan Ahamadi</p>

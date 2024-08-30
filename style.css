@@ -421,12 +421,21 @@ article h3{
     margin-top: 20px;
 }
 
-.profile-socials > a{
+.socials{
     color: var(--purple-one);
 }
 
-.profile-socials > a:hover{
-    filter: brightness(150%);
+footer .socials i:before{
+    font-size: clamp(25px,2.5vw,3vw);
+}
+
+.socials:hover{
+    filter: brightness(130%);
+}
+
+header .socials i:before{
+    font-size: clamp(25px,1.5vw,3vw);
+    color: var(--orange-one);
 }
 
 @media screen and (max-width: 1030px) {
@@ -661,7 +670,7 @@ article h3{
 
 
 .skills-container > .card {
-   min-height: 30vh; 
+   min-height: 200px; 
    background-color: var(--card-background);
    display: flex;
    flex-direction: column;
@@ -763,13 +772,12 @@ article h3{
 
 .card-image > img {
     height: clamp(25px, 10vh, 130px);
-    position: relative;
-    top: 25%;
 }
 
 .card-image{
     width: 100%;
     flex-grow: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
 }

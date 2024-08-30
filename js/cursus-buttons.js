@@ -14,7 +14,7 @@ cursusChatelier.addEventListener('click', chatelier);
 
 function plateforme() {
     paragraphe.innerHTML = "Après mon retour à Marseille, j'ai décidé de refaire une formation en informatique. On m'a recommandé une formation gratuite en informatique : Le Bachelor IT à La Plateforme. <br>La première année se fait à 100% en présentiel. On apprend les bases de l'informatique avec une pédagogie en mode projet. Qui nous permet d'apprendre en allant chercher les informations sois-même. ";
-    title.innerHTML = "Le Bachelor IT : La Plateforme. 2022 - 2023";
+    title.innerHTML = "Le Bachelor IT : La Plateforme. 2022 - MAINTENANT";
     image.src = "image/cursus/laplateforme.jpg";
     image.alt = "école la plateforme";
     lienEcole.href = "https://www.laplateforme.io/";
