@@ -210,6 +210,173 @@
 
             <article class="projets" data-aos="fade-up" id="projets">
                 <h2>Projets</h2>
+                
+                <p>
+                    Durant mes années d'études et en autodidacte, j'ai réalisé plusieurs projets personnels et professionnels.
+                    Voici quelques exemples des meilleurs projets que j'ai réalisé ( pour l'instant ;) ).
+                </p>
+
+                <div class="project-arrow">
+                    <div class="back" id="back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+
+                    <div class="next" id="next">
+                        <a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="project-slider">
+                    
+                    <ul>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>MyDiscord : Python, Tkinter, Socket</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/myDiscord.png" alt="MyDiscord">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en duo à l'école La Plateforme My Discord est un projet de messagerie instantanée en réseau local.
+                                         Il permet de créer des salons de discussions, d'envoyer des messages.
+                                         Il est possible de créer un compte et de se connecter.</p>
+                                    
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/tom-fhal/myDiscord"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Calculatrice : HTML, CSS, Javascript</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/Calculatrice.png" alt="Calculatrice">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en solo en autodidacte avec TheOdinProject 
+                                        Il s'agit d'une calculatrice basique qui permet de faire des opérations simples.
+                                         Elle a été réalisé en HTML, CSS et Javascript.</p>
+                                    
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/rayan-ahamadi/calculator"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://rayan-ahamadi.github.io/calculator/"><i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Gestion de Stock : Python, Tkinter, SQL</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/gestion-de-stock.png" alt="Gestion de Stock">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en solo à l'école La Plateforme 
+                                    Il s'agit d'une application de gestion de stock pour une entreprise.
+                                    Elle a été réalisé en Python avec une interface graphique en Tkinter et une base de données SQL.</p>
+                                    
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/rayan-ahamadi/gestion_de_stock"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Ecran Magique : HTML, CSS, Javascript</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/ecran-magique.png" alt="Ecran Magique">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en solo en autodidacte avec TheOdinProject 
+                                        Il s'agit d'un écran magique qui permet de dessiner avec la souris. 
+                                        Il a été réalisé en HTML, CSS et Javascript.</p>
+                                
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/rayan-ahamadi/etch-a-sketch"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://rayan-ahamadi.github.io/etch-a-sketch/"><i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Fansite "CBM Blog" : HTML, CSS, Javascript</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/comicsBlog.png" alt="Comics Blog">
+                                </div>
+                                <div class="project-text">
+                                    <p>
+                                        Ce projet a été réalisé en solo à l'école La Plateforme.
+                                        La consigne était de faire un site de fan dans le sujet qu'on voulait.
+                                        Il s'agit d'un site de fans de comics et CBM (Comic Book Movies).
+                                    </p>
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/rayan-ahamadi/fansite"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://rayan-ahamadi.github.io/fansite/"><i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Librairie : HTML Twig, Bootstrap, PHP Symfony</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/Librairie.png" alt="Librairie">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en solo pendant mon stage à l'AFPA de Saint-Jérôme 
+                                        Il s'agit d'un site de vente de livres. 
+                                        l a été réalisé en HTML Twig,CSS, et les framework Bootstrap et PHP Symfony.
+                                    </p>
+                                    
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/rayan-ahamadi/librairie"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Comics Shop : Figma</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/ComicsShop.png" alt="Comics Shop">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en solo à l'école La Plateforme 
+                                        Il s'agit d'un wireframe pour un site de vente de comics. 
+                                        Il a été réalisé avec Figma.</p>
+                                    
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://www.figma.com/design/B75MIBpGjiY4HXawhTcqOF/wireframe-(Copy)?node-id=0-1&node-type=CANVAS&t=eJ7rnXZpxMO3nmgO-0q"><i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+
+
+                <!--
                 <div class="projet-nom" id="projet-nom">
                     <h3>Projet My Discord : Python, Tkinter, Socket</h3>
                 </div>
@@ -234,7 +401,7 @@
                         </a>
                     </span>
                 </p>
-    
+-->
     
             </article>
     
@@ -519,7 +686,7 @@
                         </div>
                         <div class="form-group" id="message">
                             <label for="message" data-help="(Exprimez vous !)">Message*</label>
-                            <textarea id="message" name="message" pattern="^[a-zA-Z0-9À-ÖØ-öø-ÿ\s.,'!?()$%&@#\n\r-]+$" required></textarea>
+                            <textarea id="message" name="message" pattern="^[a-zA-Z0-9À-ÖØ-öø-ÿ\s.,'!?()$%&@# \r-]+$" required></textarea>
                         </div>
                         <div class="form-group">
                             <button type="submit" id="submit">Envoyer</button>
