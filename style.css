@@ -954,7 +954,14 @@ progress::-moz-progress-bar {
     gap: 20px;
     scroll-behavior: smooth;
     cursor: grab;
+    overflow-x: scroll; 
+    scrollbar-width: none; /* Pour Firefox */
 }
+
+.project-slider > ul::-webkit-scrollbar {
+    display: none; /* Pour Chrome, Safari, et Opera */
+  }
+  
 
 .project-slider > ul:active {
     cursor: grabbing;
@@ -1072,97 +1079,17 @@ progress::-moz-progress-bar {
    border-radius: 5px;
 }
 
-/* .project-slider li:first-child{
-    margin-left: 10px;
-}
-
-.project-slider li:last-child{
-    margin-right: 10px;
-} */
-
 .project-slider > ul{
-    padding: 30px;
+    padding: 0 33%;
 }
 
-/* .projets {
-    gap: 20px;
-}
-
-.slideshow-container{
-    width:80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.back,.next{
-    cursor: pointer;
-    align-self: center;
-    display: flex;
-    background-color: var(--purple-two);
-    color: white;
-    padding: 18px;
-    font-size: clamp(2px,2.3vw,3vw);
-    border: 1px solid black;
-    border-radius: 20px;
-}
-
-.back:hover,.next:hover{
-    background-color: #8a4ca0a8;
-}
-
-.dots .dot{
-    cursor : pointer;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.314);
-}
-
-.dots .dot:hover{
-    background-color: rgba(0, 0, 0, 0.481);
-}
-
-.dots .active{
-    background-color: rgba(0, 0, 0, 0.481);
-}
-
-.dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-.image-projets{
-    height: fit-content;
-}
-
-.image-projets a img{
-    max-height: clamp(15px,25vh, 500px);
-    max-width: clamp(40px, 50vw, 500px);
-    box-shadow:5px 5px 15px 5px black;
-    transition: all 1s ease;
+@media screen and (max-width:1030px) {  
+    .project-slider > ul{
+        padding: 0;
+    }
 }
 
 
-
-.image-projets a img:hover{
-    transform: scale(1.8);
-}
-
-
-.descri-projet {
-    height: 148px;
-}
-
-.descri-projet span img{
-    display: inline-block;
-    height: clamp(25px, 5vh, 50px);
-    width: clamp(25px, 5vh, 50px);;
-
-} */
 
 /* Contact */
 
