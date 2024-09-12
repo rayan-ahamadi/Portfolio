@@ -83,6 +83,7 @@ header > nav > .navbar {
 
 .navbar.scrolled {
     background-color: var(--header-color); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 
@@ -115,6 +116,7 @@ nav .button-xmark {
     justify-content: space-around;
     float: right;
     height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .menu .nav a button{
@@ -1054,7 +1056,7 @@ progress::-moz-progress-bar {
     background-color: var(--card-background);
     padding: 15px;
     gap: 20px;
-    height: clamp(400px, 50vw, 500px);
+    min-height: clamp(400px, 50vw, 500px);
     width: clamp(250px, 25vw, 500px);
     border-radius: 5px;
 }
@@ -1073,7 +1075,7 @@ progress::-moz-progress-bar {
 
 
 .project-image img{
-   height: clamp(25px, 10vw, 500px);
+   height: clamp(80px, 10vw, 500px);
    border: #3D2A56 solid 1px;
    border-radius: 5px;
 }
