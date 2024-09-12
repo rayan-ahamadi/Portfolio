@@ -953,7 +953,6 @@ progress::-moz-progress-bar {
     margin: 0;
     gap: 20px;
     scroll-behavior: smooth;
-    cursor: grab;
     overflow-x: scroll; 
     scrollbar-width: none; /* Pour Firefox */
 }

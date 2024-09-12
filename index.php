@@ -213,7 +213,7 @@
                 
                 <p>
                     Durant mes années d'études et en autodidacte, j'ai réalisé plusieurs projets personnels et professionnels.
-                    Voici quelques exemples des meilleurs projets que j'ai réalisé ( pour l'instant ;) ).
+                    Voici quelques exemples des meilleurs projets que j'ai réalisé ( pour l'instant <i class="fa-regular fa-face-smile-wink"></i> ).
                 </p>
 
                 <div class="project-arrow">
@@ -247,6 +247,24 @@
                                 </div>
                                 <div class="project-link">
                                     <a href="https://github.com/tom-fhal/myDiscord"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-card">
+                                <div class="project-title">
+                                    <h3>Tic-Tac-Toe : HTML,CSS,Javascript</h3>
+                                </div>
+                                <div class="project-image">
+                                    <img src="image/projets/tic-tac-toe.png" alt="MyDiscord">
+                                </div>
+                                <div class="project-text">
+                                    <p>Ce projet a été réalisé en solo pendant mon apprentissage autodidacte de Javascript à l'aide de TheOdinProject</p>
+                                    
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://github.com/rayan-ahamadi/tic-tac-toeJS"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://rayan-ahamadi.github.io/tic-tac-toeJS/"><i class="fa-solid fa-globe"></i></a>
                                 </div>
                             </div>
                         </li>
