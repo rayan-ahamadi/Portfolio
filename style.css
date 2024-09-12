@@ -1285,7 +1285,7 @@ main h3{
     padding: 1vh;
     width: 100%;
     height : 10%;
-    border-bottom: var(--orange-three);
+    border-bottom: 2px solid var(--purple-one);
 }
 
 .modal-image img{
@@ -1328,7 +1328,7 @@ main h3{
 }
 
 .modal-stackused{
-    border-top: 2px solid var(--orange-three);
+    border-top: 2px solid var(--purple-one);
 }
 
 .modal-description > *{
@@ -1339,32 +1339,32 @@ main h3{
 .modal-content p, 
 .modal-content h3{
     font-family: var(--font2);
-    color: var(--orange-three);
+    color: var(--purple-one);
 }
 
 .modal-content h5{
     font-family: var(--font1);
-    color: var(--orange-three);
+    color: var(--purple-one);
 }
 
 .modal .modal-content{
-    background-color: var(--purple-one);
+    background: var(--orange-three);
 }
 
 .modal .modal-header{
-    border-bottom: 2px solid var(--orange-three);
+    border-bottom: 2px solid var(--purple-one);
 }
 
 .modal .modal-footer{
-    border-top: 2px solid var(--orange-three);
+    border-top: 2px solid var(--purple-one);
 }
 
 .modal button.close {
-    color: var(--orange-three);
+    color: var(--purple-one);
     font-size: 20px;
     font-weight: bold;
-    background-color: var(--purple-one);
-    border: 2px solid var(--orange-three);
+    background-color: var(--orange-three);
+    border: 2px solid var(--purple-one);
     border-radius: 8px;
     padding: 1px 10px;
     cursor: pointer;
